@@ -1,7 +1,7 @@
 {
     "name": "Zahid",
     "short_name": "Zahid",
-    "start_url": "https://zahid.vercel.app",
+    "start_url": "/",
     "icons": [
         {
             "src": "/favicon/android-chrome-192x192.png",
