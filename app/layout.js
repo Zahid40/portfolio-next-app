@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
           rel="icon"
           type="image/png"
           sizes="192x192"
-          href="/static/icon/android-chrome-192x192.png"
+          href="/android-chrome-192x192.png"
         />
         <link
           rel="icon"
