@@ -31,16 +31,16 @@ export default function RootLayout({ children }) {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/static/icon/apple-touch-icon.png"
+          href="/apple-touch-icon.png"
         />
 
-        <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#ffffff" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffffff" />
 
         <link rel="shortcut icon" href="/favicon.ico" />
 
         <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="/static/icon/mstile-144x144.png" />
-        <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+        <meta name="msapplication-config" content="/browserconfig.xml" />
 
         <meta name="theme-color" content="#ffffff" />
 
