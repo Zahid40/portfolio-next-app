@@ -9,7 +9,7 @@ function Contact() {
           <Loginpage3d />
         </div>
         <div className="w-1/2">
-            <h1>Contact</h1>
+            <h1 className="text-5xl font-medium ">Let’s Make Something Phenomenol</h1>
         </div>
       </div>
     </div>

@@ -1,8 +1,67 @@
-import { Inter } from "next/font/google";
+import localFont  from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const productSans = localFont({
+  src: [
+    {
+      path: './fonts/ProductSans-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/ProductSans-Bold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './fonts/ProductSans-BoldItalic.ttf',
+      weight: '700',
+      style: 'italic',
+    },
+    {
+      path: './fonts/ProductSans-Light.ttf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: './fonts/ProductSans-LightItalic.ttf',
+      weight: '300',
+      style: 'italic',
+    },
+    {
+      path: './fonts/ProductSans-Medium.ttf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: './fonts/ProductSans-MediumItalic.ttf',
+      weight: '500',
+      style: 'italic',
+    },
+    {
+      path: './fonts/ProductSans-Thin.ttf',
+      weight: '100',
+      style: 'normal',
+    },
+    {
+      path: './fonts/ProductSans-ThinItalic.ttf',
+      weight: '100',
+      style: 'italic',
+    },
+    {
+      path: './fonts/ProductSans-Black.ttf',
+      weight: '900',
+      style: 'normal',
+    },
+    {
+      path: './fonts/ProductSans-BlackItalic.ttf',
+      weight: '900',
+      style: 'italic',
+    },
+  ],
+});
+
 
 export const metadata = {
   title: "Zahid - Portfolio",
@@ -42,9 +101,13 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className={inter.className}>
-        <Navbar />
-        {children}
+      <body className={productSans.className}>
+        <div className="flex items-center justify-center">
+          <div className="max-w-6xl w-full min-w-80">
+            <Navbar />
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );

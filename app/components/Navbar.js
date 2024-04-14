@@ -14,7 +14,7 @@ function Navbar() {
         <li><Link href='/contact' >Contact</Link></li>
         </ul>
         </div>
-        <button className='px-4 py-2 bg-white text-black rounded-md '>Hire me</button>
+        <button className='px-4 py-2 bg-white text-black rounded-md hover:bg-gray-100'>Hire me</button>
     </nav>
   )
 }

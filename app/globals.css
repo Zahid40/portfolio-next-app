@@ -3,6 +3,85 @@
 @tailwind utilities;
 
 
+@layer base {
+  /* Define custom font variations */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 900; /* Black */
+  src: url('/fonts/ProductSans-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 700; /* Bold */
+  src: url('/fonts/ProductSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 300; /* Light */
+  src: url('/fonts/ProductSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 500; /* Medium */
+  src: url('/fonts/ProductSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400; /* Regular */
+  src: url('/fonts/ProductSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 100; /* Thin */
+  src: url('/fonts/ProductSans-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: italic;
+  font-weight: 700; /* Bold Italic */
+  src: url('/fonts/ProductSans-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: italic;
+  font-weight: 900; /* Black Italic */
+  src: url('/fonts/ProductSans-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: italic;
+  font-weight: 300; /* Light Italic */
+  src: url('/fonts/ProductSans-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: italic;
+  font-weight: 500; /* Medium Italic */
+  src: url('/fonts/ProductSans-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: italic;
+  font-weight: 100; /* Thin Italic */
+  src: url('/fonts/ProductSans-ThinItalic.ttf') format('truetype');
+}
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -19,10 +98,11 @@
 }
 
 *{
-  font-family: "Unbounded", sans-serif;
+  
 }
 
 body {
+  font-family: "Product Sans", sans-serif;
 
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

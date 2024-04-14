@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Unbounded', 'sans-serif'], // Example with Unbounded font
+        sans: ['Product Sans', 'sans-serif'], 
       },
     },
   },
