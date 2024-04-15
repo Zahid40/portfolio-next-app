@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 function Navbar() {
   return (
-    <nav className='flex items-center justify-between gap-4 p-4'>
+    <nav className='flex items-center justify-between gap-4 p-8'>
         <div className='flex items-center gap-4'>
         <img src="/android-chrome-512x512.png" alt="logo" className='w-10' />
         <ul className='flex gap-4'>

@@ -84,33 +84,31 @@
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --zprimary: #204AD4;
+    --zblue2:#7295E4;
+    --zsecondary: #FAC404;
+    --zbg:#121212;
+    --zgary:#252525;
+    --zgray1:#333333;
+    --zgary2:#6B6B6B;
+    --zgary3:#D9D9D9;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
 *{
-  
+  font-family: "Product Sans", sans-serif;
+  font-weight: 500;
 }
 
 body {
-  font-family: "Product Sans", sans-serif;
-
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Product Sans", sans-serif!important;
+  color: white;
+  background-color: var(--zbg) ;
 }
 
 @layer utilities {

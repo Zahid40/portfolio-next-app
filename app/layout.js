@@ -1,6 +1,7 @@
 import localFont  from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import NavigationScroll from "./components/NavigationScroll";
 
 const productSans = localFont({
   src: [
@@ -106,6 +107,7 @@ export default function RootLayout({ children }) {
           <div className="max-w-6xl w-full min-w-80">
             <Navbar />
             {children}
+            <NavigationScroll/>
           </div>
         </div>
       </body>
