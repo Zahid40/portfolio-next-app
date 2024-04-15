@@ -43,11 +43,11 @@ function Contact() {
 
   return (
     <div className="rounded-xl overflow-hidden w-full h-full flex items-center justify-center">
-      <div className="w-full h-[800px] flex justify-center p-8">
-        <div className="rounded-l-3xl overflow-hidden w-2/5 h-full">
+      <div className="w-full h-full flex md:flex-row justify-center p-8 flex-col">
+        <div className="md:rounded-l-3xl rounded-t-3xl overflow-hidden md:w-2/5 w-full md:h-[800px] h-2/5">
           <Loginpage3d />
         </div>
-        <div className="w-3/5 p-8 flex flex-col justify-between rounded-r-3xl bg-zgary">
+        <div className="md:w-3/5 w-full md:h-full h-3/5 p-8 flex flex-col justify-between rounded-r-3xl bg-zgary">
           <h1 className="text-6xl font-medium">
             Let’s Make Somthing{" "}
             <span className="bg-clip-text text-transparent text-7xl font-bold bg-[linear-gradient(to_right,#818cf8,#e0e7ff,#38bdf8,#e879f9,#38bdf8,#e0e7ff,#818cf8)] bg-[length:200%_auto] animate-gradient">
