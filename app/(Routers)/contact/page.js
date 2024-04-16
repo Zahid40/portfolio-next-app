@@ -51,17 +51,17 @@ function Contact() {
   return (
     <div className="rounded-xl overflow-hidden w-full h-full flex items-center justify-center">
       <div className="w-full h-full md:h-[800px] flex md:flex-row justify-center md:p-8 p-4 flex-col">
-        <div className="md:rounded-l-3xl md:rounded-tr-none rounded-bl-none rounded-t-3xl overflow-hidden md:w-2/5 w-full md:h-full h-2/5">
+        <div className="md:rounded-l-3xl md:rounded-tr-none rounded-bl-none rounded-t-3xl overflow-hidden md:w-2/5 w-full md:h-full h-[400px]">
           <Loginpage3d />
         </div>
-        <div className="md:rounded-r-3xl md:rounded-bl-none rounded-tr-none rounded-b-3xl md:w-3/5 w-full md:h-full h-3/5 md:p-8 p-4 flex flex-col justify-between bg-zgary md:gap-2 gap-4">
+        <div className="md:rounded-r-3xl md:rounded-bl-none rounded-tr-none rounded-b-3xl md:w-3/5 w-full md:h-full h-1/2 md:p-8 p-4 flex flex-col justify-between bg-zgary md:gap-2 gap-4">
           <h1 className="md:text-6xl text-5xl font-medium">
             Let’s Make Somthing{" "}
             <span className="bg-clip-text text-transparent md:text-7xl text-6xl font-bold bg-[linear-gradient(to_right,#818cf8,#e0e7ff,#38bdf8,#e879f9,#38bdf8,#e0e7ff,#818cf8)] bg-[length:200%_auto] animate-gradient">
               Phenomenal
             </span>
           </h1>
-          <form onSubmit={handleSubmit} className="flex flex-col md:gap-6 gap-4">
+          <form onSubmit={handleSubmit} className="flex flex-col md:gap-6 gap-2">
             <label htmlFor="name">
               Name<span className="text-zsecondary"> * </span>
             </label>
@@ -118,8 +118,8 @@ function Contact() {
               className="bg-transparent border-b border-white p-2"
               required
             ></textarea>
-            <div className="flex items-center">
-              <input type="checkbox" id="confirmDetails" className="mr-2" required />
+            <div className="flex items-center my-4">
+              <input type="checkbox" id="confirmDetails" className="mr-4" required />
               <label htmlFor="confirmDetails" className="text-gray-700">
                 I confirm that all details filled are correct
               </label>

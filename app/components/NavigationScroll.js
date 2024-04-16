@@ -4,10 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 
+
 function NavigationScroll() {
  
-
-
   return (
     <>
      <Swiper
