@@ -10,14 +10,21 @@ function Contact() {
     message: "",
   });
 
+  const [buttonText, setButtonText] = useState("Submit")
+  const [buttonDisable, setButtonDisable] = useState(false)
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setButtonDisable(true);
+    setButtonText("Processing...");
     try {
       const response = await fetch(scriptURL, {
         method: "POST",
         body: new FormData(e.target),
       });
       console.log("Success!", response);
+
+      setButtonText("Request Sent 👍");
 
       setFormData({
         name: "",
@@ -43,18 +50,18 @@ function Contact() {
 
   return (
     <div className="rounded-xl overflow-hidden w-full h-full flex items-center justify-center">
-      <div className="w-full h-full flex md:flex-row justify-center p-8 flex-col">
-        <div className="md:rounded-l-3xl rounded-t-3xl overflow-hidden md:w-2/5 w-full md:h-[800px] h-2/5">
+      <div className="w-full h-full md:h-[800px] flex md:flex-row justify-center md:p-8 p-4 flex-col">
+        <div className="md:rounded-l-3xl md:rounded-tr-none rounded-bl-none rounded-t-3xl overflow-hidden md:w-2/5 w-full md:h-full h-2/5">
           <Loginpage3d />
         </div>
-        <div className="md:w-3/5 w-full md:h-full h-3/5 p-8 flex flex-col justify-between rounded-r-3xl bg-zgary">
-          <h1 className="text-6xl font-medium">
+        <div className="md:rounded-r-3xl md:rounded-bl-none rounded-tr-none rounded-b-3xl md:w-3/5 w-full md:h-full h-3/5 md:p-8 p-4 flex flex-col justify-between bg-zgary md:gap-2 gap-4">
+          <h1 className="md:text-6xl text-5xl font-medium">
             Let’s Make Somthing{" "}
-            <span className="bg-clip-text text-transparent text-7xl font-bold bg-[linear-gradient(to_right,#818cf8,#e0e7ff,#38bdf8,#e879f9,#38bdf8,#e0e7ff,#818cf8)] bg-[length:200%_auto] animate-gradient">
+            <span className="bg-clip-text text-transparent md:text-7xl text-6xl font-bold bg-[linear-gradient(to_right,#818cf8,#e0e7ff,#38bdf8,#e879f9,#38bdf8,#e0e7ff,#818cf8)] bg-[length:200%_auto] animate-gradient">
               Phenomenal
             </span>
           </h1>
-          <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+          <form onSubmit={handleSubmit} className="flex flex-col md:gap-6 gap-4">
             <label htmlFor="name">
               Name<span className="text-zsecondary"> * </span>
             </label>
@@ -68,8 +75,8 @@ function Contact() {
               required
               pattern="[A-Za-zÀ-ÿ\s'-]+"
             />
-            <div className="flex flex-row w-full justify-between gap-8">
-              <div className="flex flex-col gap-6">
+            <div className="flex flex-row w-full md:justify-between flex-wrap gap-4 md:gap-0">
+              <div className="flex flex-col md:gap-6 gap-4 md:w-2/5 w-full">
                 <label htmlFor="email">
                   E-mail<span className="text-zsecondary"> * </span>
                 </label>
@@ -83,7 +90,7 @@ function Contact() {
                   required
                 />
               </div>
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col md:gap-6 gap-4 md:w-2/5 w-full">
                 <label htmlFor="phone">
                   Phone<span className="text-zsecondary"> * </span>
                 </label>
@@ -121,8 +128,9 @@ function Contact() {
             <button
               type="submit"
               className="border border-zprimary hover:bg-zprimary w-full p-4 rounded-md font-medium text-xl transition duration-300 ease-in-out"
+              disabled={buttonDisable}
             >
-              Submit
+              {buttonText}
             </button>
           </form>
           <span className="text-xs text-zgary2 font-medium italic m-2">
