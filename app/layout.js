@@ -92,13 +92,6 @@ export default function RootLayout({ children }) {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#121212" />
         <meta name="msapplication-TileColor" content="#121212" />
         <meta name="theme-color" content="#121212" />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body className={productSans.className}>
         <div className="flex items-center justify-center">
