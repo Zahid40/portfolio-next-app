@@ -1,6 +1,5 @@
 "use client"
 import React, { useState, useEffect } from "react";
-import SlidesCard from "./components/projectsComponents/SlidesCard";
 
 export default function Home() {
   const [projectData, setProjectData] = useState([]);
@@ -65,7 +64,6 @@ export default function Home() {
   return (
     <>
       <h1>Hello World</h1>
-      <SlidesCard cardsData={projectData}/>
     </>
   );
 }
