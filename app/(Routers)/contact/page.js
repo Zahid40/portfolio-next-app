@@ -1,6 +1,7 @@
 "use client";
 import Loginpage3d from "@/app/components/Loginpage3d";
 import React, { useState } from "react";
+import { BiSolidSend } from "react-icons/bi";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -127,10 +128,11 @@ function Contact() {
 
             <button
               type="submit"
-              className="border border-zprimary hover:bg-zprimary w-full p-4 rounded-md font-medium text-xl transition duration-300 ease-in-out"
+              className="border border-zprimary hover:bg-zprimary w-full p-4 rounded-md font-medium text-xl transition duration-300 ease-in-out flex items-center justify-center gap-4"
               disabled={buttonDisable}
             >
               {buttonText}
+              <BiSolidSend />
             </button>
           </form>
           <span className="text-xs text-zgary2 font-medium italic m-2">
