@@ -61,7 +61,6 @@ const productSans = localFont({
   ],
 });
 
-
 export const metadata = {
   title: "Zahid - Portfolio",
   description: "Designing",

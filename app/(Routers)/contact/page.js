@@ -64,7 +64,7 @@ function Contact() {
           </h1>
           <form onSubmit={handleSubmit} className="flex flex-col md:gap-6 gap-2">
             <label htmlFor="name">
-              Name<span className="text-zsecondary"> * </span>
+              Name<span className="text-zsecondary-500"> * </span>
             </label>
             <input
               type="text"
@@ -79,7 +79,7 @@ function Contact() {
             <div className="flex flex-row w-full md:justify-between flex-wrap gap-4 md:gap-0">
               <div className="flex flex-col md:gap-6 gap-4 md:w-2/5 w-full">
                 <label htmlFor="email">
-                  E-mail<span className="text-zsecondary"> * </span>
+                  E-mail<span className="text-zsecondary-500"> * </span>
                 </label>
                 <input
                   type="email"
@@ -93,7 +93,7 @@ function Contact() {
               </div>
               <div className="flex flex-col md:gap-6 gap-4 md:w-2/5 w-full">
                 <label htmlFor="phone">
-                  Phone<span className="text-zsecondary"> * </span>
+                  Phone<span className="text-zsecondary-500"> * </span>
                 </label>
                 <input
                   type="tel"
@@ -108,7 +108,7 @@ function Contact() {
               </div>
             </div>
             <label htmlFor="message">
-              Message / Comment<span className="text-zsecondary "> * </span>
+              Message / Comment<span className="text-zsecondary-500 "> * </span>
             </label>
             <textarea
               name="message"
@@ -128,7 +128,7 @@ function Contact() {
 
             <button
               type="submit"
-              className="border border-zprimary hover:bg-zprimary w-full p-4 rounded-md font-medium text-xl transition duration-300 ease-in-out flex items-center justify-center gap-4"
+              className="border border-zprimary-700 hover:bg-zprimary-700 w-full p-4 rounded-md font-medium text-xl transition duration-300 ease-in-out flex items-center justify-center gap-4"
               disabled={buttonDisable}
             >
               {buttonText}
