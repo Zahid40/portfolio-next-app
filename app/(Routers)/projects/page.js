@@ -1,7 +1,13 @@
-"use client"
+
 import React from "react";
 import projectdata from "@/public/projectdata.json";
 import Card from "@/app/components/projectsComponents/Card";
+
+export const metadata = {
+  title: "Projects",
+  description: "Designing",
+};
+
 
 function Projects() {
   const data = projectdata.projects; 
