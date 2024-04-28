@@ -27,7 +27,7 @@ export default function Home() {
         <div className="w-3/5 flex flex-col gap-2">
 
           <div className="flex justify-start items-center">
-            <h2 className="mr-4 text-5xl ">Hey ! I'm </h2>
+            <h2 className="mr-4 text-5xl ">Hey ! I am </h2>
             <div className="flex items-center bg-zgary pr-8 rounded-[500px]">
             <div
               className="bg-cover bg-center bg-no-repeat w-20 aspect-square rounded-full"
