@@ -1,5 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Typed from "typed.js";
+import BannerScroll from "./components/things/BannerScroll";
 
 export default function Home() {
   const urls_for_hero_gif = [
@@ -10,6 +12,24 @@ export default function Home() {
     "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTcyN2prcnNwZmloNmh2NjA0Z2lrMGZvdzNjZGF3bDN5YmpyMGF5MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1XQtHpcQKDpdWHSL9X/giphy.gif",
     "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExengxamtmOGg3NzBjbnNyeWxodWdjNmNsbmcxbWZzMnphZndkejd5YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8Xabj5L1Of4i6LyQ1Q/giphy.gif",
   ];
+
+  // Create reference to store the DOM element containing the animation
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Web Developer", "UI Designer"],
+      typeSpeed: 60,
+      backSpeed: 60,
+      fadeOut: true,
+      loop: true,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
 
   return (
     <>
@@ -23,32 +43,33 @@ export default function Home() {
         ></div>
 
         <div className="flex justify-between items-center py-16 flex-wrap">
-
-        <div className="w-3/5 flex flex-col gap-2">
-
-          <div className="flex justify-start items-center">
-            <h2 className="mr-4 text-5xl ">Hey ! I am </h2>
-            <div className="flex items-center bg-zgary pr-8 rounded-[500px]">
-            <div
-              className="bg-cover bg-center bg-no-repeat w-20 aspect-square rounded-full"
-              style={{ backgroundImage: `url('/zahid_image.png')` }}
-            ></div>
-            <h2 className="ml-4 text-5xl font-medium italic  text-zsecondary-500">Zahid</h2>
+          <div className="w-3/5 flex flex-col gap-2">
+            <div className="flex justify-start items-center">
+              <h2 className="mr-4 text-5xl ">Hey ! I am </h2>
+              <div className="flex items-center bg-zgary pr-8 rounded-[500px]">
+                <div
+                  className="bg-cover bg-center bg-no-repeat w-20 aspect-square rounded-full"
+                  style={{ backgroundImage: `url('/zahid_image.png')` }}
+                ></div>
+                <h2 className="ml-4 text-5xl font-medium italic  text-zsecondary-500">
+                  Zahid
+                </h2>
+              </div>
             </div>
+
+            <div className="text-7xl">
+              <span ref={el} />
+            </div>
+
+            <p className="text-xl">Based in INDIA</p>
           </div>
 
-          <div className="text-7xl">
-            Web Developer
+          <div className="rounded-full w-32 h-32  bg-zprimary-700 flex justify-center items-center">
+            {/* hello  */}
           </div>
-
-          <p className="text-xl">Based in INDIA</p>
-
         </div>
 
-        <div className="rounded-full w-32 h-32  bg-zprimary-700 flex justify-center items-center">
-          {/* hello  */}
-        </div>
-        </div>
+        {/* <BannerScroll/> */}
 
       </div>
     </>
