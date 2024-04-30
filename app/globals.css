@@ -84,25 +84,81 @@
 }
 
 :root {
-    --zprimary: #204AD4;
-    --zblue2:#7295E4;
-    --zsecondary: #FAC404;
-    --zbg:#121212;
-    --zgary:#252525;
-    --zgray1:#333333;
-    --zgary2:#6B6B6B;
-    --zgary3:#D9D9D9;
+  --zprimary-50: #eff6ff;
+  --zprimary-100: #dce9fd;
+  --zprimary-200: #c0d9fd;
+  --zprimary-300: #95c2fb;
+  --zprimary-400: #63a1f7;
+  --zprimary-500: #3e7ef3;
+  --zprimary-600: #285ee8;
+  --zprimary-700: #204ad4;
+  --zprimary-800: #203dad;
+  --zprimary-900: #203888;
+  --zprimary-950: #182453;
 
+  --zsecondary-50: #fefde8;
+  --zsecondary-100: #fffbc2;
+  --zsecondary-200: #fff588;
+  --zsecondary-300: #ffe644;
+  --zsecondary-400: #fed511;
+  --zsecondary-500: #fac404;
+  --zsecondary-600: #ce9000;
+  --zsecondary-700: #a46704;
+  --zsecondary-800: #87500c;
+  --zsecondary-900: #734110;
+  --zsecondary-950: #432105;
+
+  --zbg: #121212;
+  --zgary: #252525;
+  --zgray1: #333333;
+  --zgary2: #6B6B6B;
+  --zgary3: #D9D9D9;
+  --zwhite: #ffffff;
+  --zcurrent: currentColor;
+  --ztransparent: transparent;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-  }
+    --zprimary-50: #eff6ff;
+    --zprimary-100: #dce9fd;
+    --zprimary-200: #c0d9fd;
+    --zprimary-300: #95c2fb;
+    --zprimary-400: #63a1f7;
+    --zprimary-500: #3e7ef3;
+    --zprimary-600: #285ee8;
+    --zprimary-700: #204ad4;
+    --zprimary-800: #203dad;
+    --zprimary-900: #203888;
+    --zprimary-950: #182453;
+
+    --zsecondary-50: #fefde8;
+    --zsecondary-100: #fffbc2;
+    --zsecondary-200: #fff588;
+    --zsecondary-300: #ffe644;
+    --zsecondary-400: #fed511;
+    --zsecondary-500: #fac404;
+    --zsecondary-600: #ce9000;
+    --zsecondary-700: #a46704;
+    --zsecondary-800: #87500c;
+    --zsecondary-900: #734110;
+    --zsecondary-950: #432105;
+
+    --zbg: #121212;
+    --zgary: #252525;
+    --zgray1: #333333;
+    --zgary2: #6B6B6B;
+    --zgary3: #D9D9D9;
+    --zwhite: #ffffff;
+    --zcurrent: currentColor;
+    --ztransparent: transparent;
+}
 }
 
 *{
   font-family: "Product Sans", sans-serif;
   font-weight: 500;
+  transition: all .3s;
 }
 
 body {
