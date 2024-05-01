@@ -2,10 +2,10 @@ import React from 'react'
 
 function page() {
   return (
-    <div>
+    <div className='p-2'>
       <h1 class="text-2xl font-bold mb-4">Privacy Policy</h1>
 
-<p class="mb-4">This Privacy Policy describes how Zahid Anasari ("we", "us", or "our") collects, uses, and shares personal information when you visit or interact with our website (<a href="https://zahid.vercel.app" class="text-blue-500">https://zahid.vercel.app</a>) (the "Site").</p>
+<p class="mb-4">This Privacy Policy describes how Zahid Anasari (we, us, or our) collects, uses, and shares personal information when you visit or interact with our website (<a href="https://zahid.vercel.app" class="text-blue-500">https://zahid.vercel.app</a>) (the Site).</p>
 
 <h2 class="text-lg font-bold mb-2">Information We Collect</h2>
 
