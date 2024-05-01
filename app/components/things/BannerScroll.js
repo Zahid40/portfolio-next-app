@@ -12,13 +12,26 @@ function BannerScroll() {
       freeMode={true}
       loop={true}
       speed= {1000}
+
+      breakpoints= {
+        // when window width is >= 320px
+        {320: {
+          slidesPerView: 5,
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 8,
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 10,
+        }}
+      }
       
       autoplay={{
         delay: 0,
         disableOnInteraction: false,
       }}
-      onSlideChange={() => console.log('')}
-      onSwiper={(swiper) => console.log()}
       modules={[Autoplay , FreeMode]}
       className='bg-zbg flex justify-center items-center'
     >
