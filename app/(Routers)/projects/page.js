@@ -1,4 +1,3 @@
-
 import React from "react";
 import projectdata from "@/public/projectdata.json";
 import Card from "@/app/components/projectsComponents/Card";

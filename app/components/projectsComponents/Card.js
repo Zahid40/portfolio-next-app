@@ -8,21 +8,21 @@ function Card(props) {
   return (
     <>
       <div className="bg-zgary p-8 rounded-xl flex flex-col gap-4">
-        <div className=" flex flex-row gap-4">
-          <div className="w-1/2 flex flex-col gap-6">
-            <h1 className="text-9xl mb-16">{data.project_name}</h1>
+        <div className=" flex flex-col md:flex-row gap-4">
+          <div className="md:w-1/2 w-full flex md:flex-col flex-row items-start justify-between gap-6">
+            <h1 className="text-6xl md:text-9xl mb-16">{data.project_name}</h1>
             <img
               src={data.logo_url}
               alt={data.project_name}
-              className="rounded-full w-10 aspect-square "
+              className="rounded-full w-10  aspect-square "
             />
           </div>
-          <div className="w-1/2 flex flex-col items-end justify-end gap-6">
+          <div className="md:w-1/2 w-full flex md:flex-col flex-row-reverse items-end justify-end gap-6">
             <TechUsedIconsPack icons={data.technologies_used} />
-            <p>{data.description}</p>
+            <p className="text-xs md:text-sm">{data.description}</p>
           </div>
         </div>
-        <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row gap-4">
           <Link
             href={data.project_link}
             type="button"
