@@ -34,7 +34,7 @@ function Navbar() {
               href="/contact"
               className="italic flex justify-center items-center gap-2 py-2 md:px-8 px-4 border  rounded-full group border-zprimary-800  hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)]"
             >
-              Let's Talk <div className="w-2 h-2 bg-zsecondary-400 rounded-full animate-ping relative left-4"></div><div className="w-2 h-2 bg-zsecondary-700 rounded-full "></div>
+              Lets Talk <div className="w-2 h-2 bg-zsecondary-400 rounded-full animate-ping relative left-4"></div><div className="w-2 h-2 bg-zsecondary-700 rounded-full "></div>
             </Link>
           </li>
         </ul>
