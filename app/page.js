@@ -1,10 +1,9 @@
 "use client";
-import React, { useState, useEffect , useRef} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Typed from "typed.js";
 import BannerScroll from "./components/things/BannerScroll";
 
 export default function Home() {
-  
   const urls_for_hero_gif = [
     "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXNwd3lrb243czNnaWF1YTRtaDNxbWx5d2VnZG1iNHo0NWh0dDk4NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4WSTSdQZXwME0/giphy.gif",
     "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHB3aTExOGdnbXJzZnQweHg1YXUycXVoc2oxZHU0ZDZjanM2bGNqcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3q3SUqPnxZGQpMNcjc/giphy.gif",
@@ -15,37 +14,39 @@ export default function Home() {
   ];
 
   // Create reference to store the DOM element containing the animation
-  const el = useRef(null);
+  // const el = useRef(null);
 
-  useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: ["Web Developer", "UI Designer"],
-      typeSpeed: 60,
-      backSpeed: 60,
-      fadeOut: true,
-      loop: true,
-    });
+  // useEffect(() => {
+  //   const typed = new Typed(el.current, {
+  //     strings: ["Web Developer", "UI Designer"],
+  //     typeSpeed: 60,
+  //     backSpeed: 60,
+  //     fadeOut: true,
+  //     loop: true,
+  //   });
 
-    return () => {
-      // Destroy Typed instance during cleanup to stop animation
-      typed.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     // Destroy Typed instance during cleanup to stop animation
+  //     typed.destroy();
+  //   };
+  // }, []);
 
   return (
     <>
-      <div>
-        <div
+      <div className="py-8 h-auto flex flex-col justify-between">
+      
+
+        {/* <div
           className="bg-center bg-origin-border bg-no-repeat w-full h-80  overflow-hidden"
           style={{
             backgroundImage: `url(${urls_for_hero_gif[3]})`,
             backgroundSize: "110%",
           }}
-        ></div>
+        ></div> */}
 
-        <div className="flex justify-between items-center md:px-8 px-4 md:py-16 py-8 flex-wrap">
-          <div className="md:w-3/5 flex flex-col gap-2">
-            <div className="flex justify-start items-center">
+        <div className="flex justify-center items-center md:px-8 px-4 md:py-16 py-8 flex-wrap">
+          <div className="md:w-3/5 flex flex-col justify-center items-center gap-4">
+            <div className="flex justify-center items-center">
               <h2 className="mr-4 md:text-5xl text-3xl">Hey ! I am </h2>
               <div className="flex items-center bg-zgary md:pr-8 pr-6 rounded-[500px]">
                 <div
@@ -58,20 +59,32 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="md:text-7xl text-5xl">
-              <span ref={el} />
+            <div className="md:text-7xl text-5xl text-center">
+              Frontend Web Developer
             </div>
 
-            <p className="text-sm md:text-xl">Based in INDIA</p>
+            <p className="text-sm md:text-4xl">Based in INDIA</p>
           </div>
 
-          <div className="rounded-full w-32 h-32  bg-zprimary-700 flex justify-center items-center">
-            {/* hello  */}
+          {/* <div className="rounded-full w-32 h-32  bg-zprimary-700 flex justify-center items-center">
+          </div> */}
+        </div>
+
+        <div className="relative flex overflow-x-hidden">
+          <div className="py-12 animate-marquee whitespace-nowrap">
+            <span className="text-7xl  md:text-9xl font-normal mx-4">Develop</span>
+            <span className="text-7xl  md:text-9xl font-normal mx-4">Create</span>
+            <span className="text-7xl  md:text-9xl font-normal mx-4">Design</span>
+          </div>
+
+          <div className="absolute top-0 py-12 px-2 animate-marquee2 whitespace-nowrap">
+            <span className="text-7xl  md:text-9xl font-normal mx-4">Develop</span>
+            <span className="text-7xl  md:text-9xl font-normal mx-4">Create</span>
+            <span className="text-7xl  md:text-9xl font-normal mx-4">Design</span>
           </div>
         </div>
 
         {/* <BannerScroll/> */}
-
       </div>
     </>
   );

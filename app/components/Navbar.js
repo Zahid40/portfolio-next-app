@@ -24,7 +24,7 @@ function Navbar() {
           <li>
             <Link
               href="/projects"
-              className={pathname== '/projects' ? "text-xs text-zprimary-400" : "text-xs text-zgary2"}
+              className={pathname.startsWith('/projects') ? "text-xs text-zprimary-400" : "text-xs text-zgary2"}
             >
               Projects
             </Link>

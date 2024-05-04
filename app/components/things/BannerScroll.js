@@ -132,6 +132,39 @@ function BannerScroll() {
       <SwiperSlide ><div className='flex justify-center items-center'><img src="/Zlogo_blue.svg" alt="" className='w-12 h-12 ' /></div></SwiperSlide>
       <SwiperSlide><span className='font-medium text-white h-12 flex items-center justify-center'>Create</span></SwiperSlide>
     </Swiper>
+
+
+    {/* <div class="relative flex overflow-x-hidden">
+  <div class="py-12 animate-marquee whitespace-nowrap">
+    <span class="text-4xl mx-4">Develop</span>
+    <span><div className='inline justify-center items-center'><img src="/Zlogo_blue.svg" alt="" className='w-12 h-12 inline' /></div></span>
+    <span class="text-4xl mx-4">Create</span>
+    <span><div className='inline justify-center items-center'><img src="/Zlogo_blue.svg" alt="" className='w-12 h-12 inline' /></div></span>
+    <span class="text-4xl mx-4">Design</span>
+    <span><div className='inline justify-center items-center'><img src="/Zlogo_blue.svg" alt="" className='w-12 h-12 inline' /></div></span>
+    <span class="text-4xl mx-4">Develop</span>
+    <span><div className='inline justify-center items-center'><img src="/Zlogo_blue.svg" alt="" className='w-12 h-12 inline' /></div></span>
+    <span class="text-4xl mx-4">Create</span>
+    <span><div className='inline justify-center items-center'><img src="/Zlogo_blue.svg" alt="" className='w-12 h-12 inline' /></div></span>
+    <span class="text-4xl mx-4">Design</span>
+    <span><div className='inline justify-center items-center'><img src="/Zlogo_blue.svg" alt="" className='w-12 h-12 inline' /></div></span>
+  </div>
+
+  <div class="absolute top-0 py-12 px-4 animate-marquee2 whitespace-nowrap">
+  <span class="text-4xl mx-4">Develop</span>
+    <span><div className='inline justify-center items-center'><img src="/Zlogo_blue.svg" alt="" className='w-12 h-12 inline' /></div></span>
+    <span class="text-4xl mx-4">Create</span>
+    <span><div className='inline justify-center items-center'><img src="/Zlogo_blue.svg" alt="" className='w-12 h-12 inline' /></div></span>
+    <span class="text-4xl mx-4">Design</span>
+    <span><div className='inline justify-center items-center'><img src="/Zlogo_blue.svg" alt="" className='w-12 h-12 inline' /></div></span>
+  <span class="text-4xl mx-4">Develop</span>
+    <span><div className='inline justify-center items-center'><img src="/Zlogo_blue.svg" alt="" className='w-12 h-12 inline' /></div></span>
+    <span class="text-4xl mx-4">Create</span>
+    <span><div className='inline justify-center items-center'><img src="/Zlogo_blue.svg" alt="" className='w-12 h-12 inline' /></div></span>
+    <span class="text-4xl mx-4">Design</span>
+    <span><div className='inline justify-center items-center'><img src="/Zlogo_blue.svg" alt="" className='w-12 h-12 inline' /></div></span>
+  </div>
+</div> */}
     </>
   )
 }
