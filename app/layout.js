@@ -100,6 +100,7 @@ export default function RootLayout({ children }) {
           <div className="max-w-6xl w-full min-w-80">
             <Navbar />
             {children}
+            <SpeedInsights />
             <Footer/>
           </div>
         </div>
