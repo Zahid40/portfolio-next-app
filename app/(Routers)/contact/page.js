@@ -1,9 +1,7 @@
 "use client";
-import Loginpage3d from "@/app/components/Loginpage3d";
 import React, { useState } from "react";
+import Image from "next/image";
 import { BiSolidSend } from "react-icons/bi";
-
-
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -13,8 +11,8 @@ function Contact() {
     message: "",
   });
 
-  const [buttonText, setButtonText] = useState("Submit")
-  const [buttonDisable, setButtonDisable] = useState(false)
+  const [buttonText, setButtonText] = useState("Submit");
+  const [buttonDisable, setButtonDisable] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -54,9 +52,16 @@ function Contact() {
   return (
     <div className="rounded-xl overflow-hidden w-full h-full flex items-center justify-center">
       <div className="w-full h-full md:h-[800px] flex md:flex-row justify-center md:p-8 p-4 flex-col">
-        <div className="md:rounded-l-3xl md:rounded-tr-none rounded-bl-none rounded-t-3xl overflow-hidden md:w-2/5 w-full md:h-full h-[400px]">
-          <Loginpage3d />
-        </div>
+        <Image
+          src="/contactformimage.jpg"
+          alt="Picture of the author"
+          width={400}
+          height={800}
+          className="md:rounded-l-3xl md:rounded-tr-none rounded-bl-none rounded-t-3xl overflow-hidden md:w-2/5 w-full md:h-full h-[400px]"
+          // blurDataURL="data:..." automatically provided
+          //placeholder="blur" // Optional blur-up while loading
+        />
+
         <div className="md:rounded-r-3xl md:rounded-bl-none rounded-tr-none rounded-b-3xl md:w-3/5 w-full md:h-full h-1/2 md:p-8 p-4 flex flex-col justify-between bg-zgary md:gap-2 gap-4">
           <h1 className="md:text-6xl text-5xl font-medium">
             Let’s Make Somthing{" "}
@@ -64,7 +69,10 @@ function Contact() {
               Phenomenal
             </span>
           </h1>
-          <form onSubmit={handleSubmit} className="flex flex-col md:gap-6 gap-2">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col md:gap-6 gap-2"
+          >
             <label htmlFor="name">
               Name<span className="text-zsecondary-500"> * </span>
             </label>
@@ -122,7 +130,12 @@ function Contact() {
               required
             ></textarea>
             <div className="flex items-center my-4">
-              <input type="checkbox" id="confirmDetails" className="mr-4" required />
+              <input
+                type="checkbox"
+                id="confirmDetails"
+                className="mr-4"
+                required
+              />
               <label htmlFor="confirmDetails" className="text-gray-700">
                 I confirm that all details filled are correct
               </label>
@@ -139,8 +152,9 @@ function Contact() {
           </form>
           <span className="text-xs text-zgary2 font-medium italic m-2">
             Please fill out all fields marked with an asterisk (
-            <span className="text-zsecondary"> * </span>) as they are mandatory.
-            Incomplete forms may result in delays in processing your request.
+            <span className="text-zsecondary-500"> * </span>) as they are
+            mandatory. Incomplete forms may result in delays in processing your
+            request.
           </span>
         </div>
       </div>

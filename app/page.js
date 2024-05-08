@@ -4,14 +4,14 @@ import Typed from "typed.js";
 import BannerScroll from "./components/things/BannerScroll";
 
 export default function Home() {
-  const urls_for_hero_gif = [
-    "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXNwd3lrb243czNnaWF1YTRtaDNxbWx5d2VnZG1iNHo0NWh0dDk4NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4WSTSdQZXwME0/giphy.gif",
-    "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHB3aTExOGdnbXJzZnQweHg1YXUycXVoc2oxZHU0ZDZjanM2bGNqcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3q3SUqPnxZGQpMNcjc/giphy.gif",
-    "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3hyc2x6NGEzam96cXN2ZTMwM2dtMG5laHp4ZWsydzYwODhvaDVyNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S93ZDkcpYf6kw632hm/giphy.gif",
-    "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RjM2s1emMyZWFzcnhieGtoNDRiOTdnb29wdjdpc2k2a3V5NjRmYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pOhqA8rf4IwuDoM0QI/giphy.gif",
-    "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTcyN2prcnNwZmloNmh2NjA0Z2lrMGZvdzNjZGF3bDN5YmpyMGF5MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1XQtHpcQKDpdWHSL9X/giphy.gif",
-    "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExengxamtmOGg3NzBjbnNyeWxodWdjNmNsbmcxbWZzMnphZndkejd5YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8Xabj5L1Of4i6LyQ1Q/giphy.gif",
-  ];
+  // const urls_for_hero_gif = [
+  //   "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXNwd3lrb243czNnaWF1YTRtaDNxbWx5d2VnZG1iNHo0NWh0dDk4NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4WSTSdQZXwME0/giphy.gif",
+  //   "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHB3aTExOGdnbXJzZnQweHg1YXUycXVoc2oxZHU0ZDZjanM2bGNqcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3q3SUqPnxZGQpMNcjc/giphy.gif",
+  //   "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3hyc2x6NGEzam96cXN2ZTMwM2dtMG5laHp4ZWsydzYwODhvaDVyNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S93ZDkcpYf6kw632hm/giphy.gif",
+  //   "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RjM2s1emMyZWFzcnhieGtoNDRiOTdnb29wdjdpc2k2a3V5NjRmYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pOhqA8rf4IwuDoM0QI/giphy.gif",
+  //   "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTcyN2prcnNwZmloNmh2NjA0Z2lrMGZvdzNjZGF3bDN5YmpyMGF5MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1XQtHpcQKDpdWHSL9X/giphy.gif",
+  //   "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExengxamtmOGg3NzBjbnNyeWxodWdjNmNsbmcxbWZzMnphZndkejd5YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8Xabj5L1Of4i6LyQ1Q/giphy.gif",
+  // ];
 
   // Create reference to store the DOM element containing the animation
   // const el = useRef(null);
@@ -39,7 +39,7 @@ export default function Home() {
         {/* <div
           className="bg-center bg-origin-border bg-no-repeat w-full h-80  overflow-hidden"
           style={{
-            backgroundImage: `url(${urls_for_hero_gif[3]})`,
+            backgroundImage: `url(${urls_for_hero_gif[5]})`,
             backgroundSize: "110%",
           }}
         ></div> */}
