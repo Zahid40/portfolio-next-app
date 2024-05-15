@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Typed from "typed.js";
 import BannerScroll from "./components/things/BannerScroll";
+import { SiNextdotjs , SiReact , SiHtml5 , SiTailwindcss , SiVite , SiCss3 , SiJavascript  ,SiFigma   } from "react-icons/si";
 
 export default function Home() {
 
@@ -26,9 +27,9 @@ export default function Home() {
   return (
     <>
     
-        <div className="md:w-96 w-56 md:h-56 h-48 bg-zprimary-700 absolute md:top-[30%] top-[25%] md:left-[35%] left-[10%] z-10 "></div>
+        <div className="md:w-96 w-56 md:h-56 h-48 bg-zprimary-900 absolute md:top-[30%] top-[25%] md:left-[39%] left-[10%] z-10 "></div>
       <div className="py-8 h-auto flex flex-col justify-between relative  z-20 backdrop-blur-[140px]">
-        <div className="flex justify-center items-center md:px-8 px-4 md:py-16 py-8 flex-wrap ">
+        <div className="flex flex-col justify-center items-center md:px-8 px-4 md:py-16 py-8 flex-wrap ">
           <div className="md:w-3/5 flex flex-col justify-center items-center gap-4">
             <div className="flex justify-center items-center">
               <h2 className="mr-4 md:text-5xl text-3xl">Hey ! I am </h2>
@@ -47,7 +48,11 @@ export default function Home() {
               Frontend Web Developer
             </div>
 
-            <p className="text-sm md:text-4xl">Based in INDIA</p>
+            <p className="text-sm md:text-3xl">Based in India</p>
+          </div>
+          <div className="flex gap-8 py-12">
+            <button className="btn bg-zprimary-800 px-8 py-4 rounded-xl">Download CV</button>
+            <button className="btn bg-zprimary-800 px-8 py-4 rounded-xl">Contact Now</button>
           </div>
         </div>
 
@@ -64,6 +69,8 @@ export default function Home() {
             <span className="text-7xl  md:text-9xl font-normal mx-4">Design</span>
           </div>
         </div>
+
+        <div className="h-24 w-full bg-zprimary-800 rounded-lg"></div>
 
         {/* <BannerScroll/> */}
       </div>

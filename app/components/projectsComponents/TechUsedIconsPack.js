@@ -2,7 +2,7 @@ import React from 'react'
 import { SiNextdotjs , SiReact , SiHtml5 , SiTailwindcss , SiVite , SiCss3 , SiJavascript  ,SiFigma   } from "react-icons/si";
 
 function TechUsedIconsPack(props) {
-    const arricons = props.icons
+    const arricons = props.icons;
   return (
     <div className='flex flex-col justify-center items-center gap-2'>
 

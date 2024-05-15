@@ -1,33 +1,30 @@
-"use client"
-import React , {useState , useEffect} from "react";
+import React  from "react";
 import Card from "@/app/components/projectsComponents/Card";
+import c_data from '@/public/courseData.json'
 
-// export const metadata = {
-//   title: "Projects",
-//   description: "Designing",
-// };
+export const metadata = {
+  title: "Projects",
+  description: "Designing",
+};
 
 
 function Projects() {
+  const data = c_data.projects;
 
-  const [data, setdata] = useState(0);
+  // const [data, setdata] = useState(0);
 
-  useEffect(() => {
-    fetch('/api/database/welcome')
-    .then(response => response.json())
-    .then(cdata => {
-      // Use the data in your project page
-      console.log(cdata);
-      setdata(cdata);  
-    })
-    .catch(error => {
-      console.error('Error fetching data:', error);
-    });
-  }, [])
-  
-
- 
-
+  // useEffect(() => {
+  //   fetch('/api/database/welcome')
+  //   .then(response => response.json())
+  //   .then(cdata => {
+  //     // Use the data in your project page
+  //     console.log(cdata);
+  //     setdata(cdata);  
+  //   })
+  //   .catch(error => {
+  //     console.error('Error fetching data:', error);
+  //   });
+  // }, [])
 
   return (
     <div className="rounded-xl overflow-hidden w-full h-full flex items-center justify-center">
