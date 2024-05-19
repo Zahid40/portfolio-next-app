@@ -160,6 +160,9 @@
   font-weight: 500;
   transition: all .3s;
 }
+*::-webkit-scrollbar{
+  display: none;
+}
 
 body {
   font-family: "Product Sans", sans-serif!important;

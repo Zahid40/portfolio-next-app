@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
+import { FiArrowUpRight , FiDownload } from "react-icons/fi";
 import Typed from "typed.js";
 import BannerScroll from "./components/things/BannerScroll";
 import { SiNextdotjs , SiReact , SiHtml5 , SiTailwindcss , SiVite , SiCss3 , SiJavascript  ,SiFigma   } from "react-icons/si";
@@ -28,7 +29,7 @@ export default function Home() {
     <>
     
         <div className="md:w-96 w-56 md:h-56 h-48 bg-zprimary-900 absolute md:top-[30%] top-[25%] md:left-[39%] left-[10%] z-10 "></div>
-      <div className="py-8 h-auto flex flex-col justify-between relative  z-20 backdrop-blur-[140px]">
+      <div className="py-24  flex flex-col justify-between relative  z-20 backdrop-blur-[140px] h-screen">
         <div className="flex flex-col justify-center items-center md:px-8 px-4 md:py-16 py-8 flex-wrap ">
           <div className="md:w-3/5 flex flex-col justify-center items-center gap-4">
             <div className="flex justify-center items-center">
@@ -51,12 +52,12 @@ export default function Home() {
             <p className="text-sm md:text-3xl">Based in India</p>
           </div>
           <div className="flex gap-8 py-12">
-            <button className="btn bg-zprimary-800 px-8 py-4 rounded-xl">Download CV</button>
-            <button className="btn bg-zprimary-800 px-8 py-4 rounded-xl">Contact Now</button>
+            <button className="btn bg-zprimary-800 px-8 py-4 text-sm font-light rounded-full flex justify-center items-center gap-4">Download CV <FiDownload className="text-xl" /></button>
+            <button className="btn bg-zprimary-800 px-8 py-4 text-sm font-light rounded-full  flex justify-center items-center gap-4">Contact Me <FiArrowUpRight className="text-xl" /></button>
           </div>
         </div>
 
-        <div className="relative flex overflow-x-hidden">
+        <div className="relative flex overflow-x-hidden  ">
           <div className="py-12 animate-marquee whitespace-nowrap">
             <span className="text-7xl  md:text-9xl font-normal mx-4">Develop</span>
             <span className="text-7xl  md:text-9xl font-normal mx-4">Create</span>
@@ -70,7 +71,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="h-24 w-full bg-zprimary-800 rounded-lg"></div>
+        {/* <div className="h-24 w-full bg-zprimary-800 rounded-lg"></div> */}
 
         {/* <BannerScroll/> */}
       </div>
