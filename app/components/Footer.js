@@ -122,6 +122,11 @@ function Footer() {
           </div>
         </div>
 
+        {/* <div className="grid grid-cols-4 grid-rows-3 p-4 md:p-8">
+          <p>Usefull Links</p>
+          <a href="/">ffffl</a>
+        </div> */}
+
         <BannerScroll />
         <div className="p-4 md:p-8">
           <div className="flex justify-between">
