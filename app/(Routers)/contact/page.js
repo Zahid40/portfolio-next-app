@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { BiSolidSend } from "react-icons/bi";
+import { PiPhoneCallFill } from "react-icons/pi";
+import { IoMdMail } from "react-icons/io";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -51,8 +53,15 @@ function Contact() {
 
   return (
     <div className="rounded-xl overflow-hidden w-full h-full flex flex-col items-center justify-center">
-      <h1 className="text-6xl md:text-8xl pt-10 md:pt-20 pb-8 text-center">Contact Me<span className="text-zprimary-600 text-9xl leading-0">.</span></h1>
-      <p className="font-light text-base md:text-xl text-center w-5/6 md:w-2/3 pb-8 md:pb-12">I&apos;d love to hear from you! Whether you have a question, a project idea, or just want to say hello, feel free to get in touch using the form below.</p>
+      <h1 className="text-6xl md:text-8xl pt-10 md:pt-20 pb-8 text-center">
+        Contact Me
+        <span className="text-zprimary-600 text-9xl leading-0">.</span>
+      </h1>
+      <p className="font-light text-base md:text-xl text-center w-5/6 md:w-2/3 pb-8 md:pb-12">
+        I&apos;d love to hear from you! Whether you have a question, a project
+        idea, or just want to say hello, feel free to get in touch using the
+        form below.
+      </p>
       <div className="w-full h-full  flex md:flex-row justify-center md:p-8 p-4 flex-col">
         <Image
           src="/contactformimage.jpg"
@@ -159,6 +168,35 @@ function Contact() {
             request.
           </span>
         </div>
+      </div>
+
+      <p className="font-light text-sm md:text-xl text-center w-5/6  p-8 md:p-12">
+        If you have any questions, project inquiries, or collaboration ideas,
+        don&apos;t hesitate to reach out. I&apos;m always excited to discuss new
+        projects and opportunities. You can contact me via email, phone, or the
+        form above. I look forward to connecting with you!
+      </p>
+
+      <div className="flex flex-col md:flex-row bg-zgary md:w-5/6 justify-center md:justify-between p-12 md:p-20  mb-8 md:my-16 relative rounded-3xl gap-8">
+        <div className="flex flex-col gap-4">
+          <p className="flex justify-start items-center gap-8 font-medium text-base md:text-xl">
+            <IoMdMail className="inline bg-zbg p-3  rounded-lg text-5xl" />
+            <a href="mailto:zahidanasari17@gmail.com">
+              zahidanasari17@gmail.com
+            </a>
+          </p>
+          <p className="flex justify-start items-center gap-8 font-medium text-base md:text-xl">
+            <PiPhoneCallFill className="inline bg-zbg p-3  rounded-lg text-5xl" />
+            <a href="tel:+919625162488">+91 96251 62488</a>
+          </p>
+        </div>
+        <Image
+          src="/assets/wavy-hand.svg"
+          height={150}
+          width={130}
+          alt="wavy-hand"
+          className="md:absolute right-8 bottom-0 hidden md:block"
+        />
       </div>
     </div>
   );

@@ -122,10 +122,17 @@ function Footer() {
           </div>
         </div>
 
-        {/* <div className="grid grid-cols-4 grid-rows-3 p-4 md:p-8">
-          <p>Usefull Links</p>
-          <a href="/">ffffl</a>
-        </div> */}
+        <div className="grid grid-cols-2 md:grid-cols-4  p-4 md:p-8 gap-4">
+          {/* <p className="col-span-2 md:col-span-4 text-xl">Usefull Links</p> */}
+          <a href="https://www.codewithharry.com/" className="text-sm font-normal text-gray-400 hover:text-white">CodeWithHarry</a>
+          <a href="https://www.fffuel.co/" className="text-sm font-normal text-gray-400 hover:text-white">fffuel</a>
+          <a href="https://fonts.google.com/" className="text-sm font-normal text-gray-400 hover:text-white">Google Fonts</a>
+          <a href="https://fontawesome.com/" className="text-sm font-normal text-gray-400 hover:text-white">Fontawesome</a>
+          <a href="https://www.freepik.com/" className="text-sm font-normal text-gray-400 hover:text-white">Freepik</a>
+          <a href="https://storyset.com/" className="text-sm font-normal text-gray-400 hover:text-white">Storyset</a>
+          <a href="https://www.flaticon.com/" className="text-sm font-normal text-gray-400 hover:text-white">Flaticon</a>
+          <Link href={"/"} className="text-sm font-normal text-gray-400 hover:text-white">More Usefull Links</Link>
+        </div>
 
         <BannerScroll />
         <div className="p-4 md:p-8">
@@ -134,7 +141,7 @@ function Footer() {
               &copy; 2024 | Zahid | All Rights Reserved
             </small>
             <small>
-              <Link href="/security-policy"> Privacy Policy</Link>
+              <Link href="/PrivacyPolicy"> Privacy Policy</Link>
             </small>
           </div>
         </div>

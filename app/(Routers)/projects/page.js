@@ -1,9 +1,9 @@
 import React  from "react";
 import Card from "@/app/components/projectsComponents/Card";
-import c_data from '@/public/courseData.json'
+import c_data from '@/public/projectdata.json'
 
 export const metadata = {
-  title: "Projects",
+  title: "Projects by Zahid",
   description: "Designing",
 };
 
@@ -30,7 +30,7 @@ function Projects() {
     <div className="rounded-xl overflow-hidden w-full h-full flex items-center justify-center">
       <div className="w-full h-full flex justify-center md:p-8 p-4 flex-col gap-12">
         {Object.keys(data).map((projectName) => (
-          <Card key={projectName} data={data[projectName]} />
+          <Card key={projectName} data={data[projectName]} /> 
         ))}
       </div>
     </div>
