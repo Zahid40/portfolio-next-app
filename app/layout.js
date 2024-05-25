@@ -91,9 +91,9 @@ export default function RootLayout({ children }) {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#121212" />
-        <meta name="msapplication-TileColor" content="#121212" />
-        <meta name="theme-color" content="#121212" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="theme-color" content="#000000" />
       </head>
       <body className={productSans.className}>
         <div className="flex items-center justify-center">
