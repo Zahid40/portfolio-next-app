@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FiArrowUpRight, FiDownload } from "react-icons/fi";
 
 function HeroSection() {
@@ -99,9 +100,9 @@ function HeroSection() {
             <button className="btn border  rounded-full group border-zprimary-800  hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)] px-6 md:px-8 py-3 md:py-4 text-xs md:text-sm font-light  flex justify-center items-center gap-4">
               Download CV <FiDownload className=" text-base md:text-xl" />
             </button>
-            <button className="btn bg-zprimary-800 px-6 md:px-8 py-3 md:py-4 text-xs md:text-sm font-light rounded-full  flex justify-center items-center gap-4 hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)]">
+            <Link href='/contact' className="btn bg-zprimary-800 px-6 md:px-8 py-3 md:py-4 text-xs md:text-sm font-light rounded-full  flex justify-center items-center gap-4 hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)]">
               Contact Me <FiArrowUpRight className="text-base md:text-xl" />
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -111,7 +112,7 @@ function HeroSection() {
               Develop
             </span>
             <Image
-              src="/assets/star.svg"
+              src="/assets/Star.svg"
               width={60}
               height={60}
               alt="html"
@@ -121,7 +122,7 @@ function HeroSection() {
               Create
             </span>
             <Image
-              src="/assets/star.svg"
+              src="/assets/Star.svg"
               width={60}
               height={60}
               alt="html"
@@ -131,7 +132,7 @@ function HeroSection() {
               Design
             </span>
             <Image
-              src="/assets/star.svg"
+              src="/assets/Star.svg"
               width={60}
               height={60}
               alt="html"
@@ -144,7 +145,7 @@ function HeroSection() {
               Develop
             </span>
             <Image
-              src="/assets/star.svg"
+              src="/assets/Star.svg"
               width={60}
               height={60}
               alt="html"
@@ -154,7 +155,7 @@ function HeroSection() {
               Create
             </span>
             <Image
-              src="/assets/star.svg"
+              src="/assets/Star.svg"
               width={60}
               height={60}
               alt="html"
@@ -164,7 +165,7 @@ function HeroSection() {
               Design
             </span>
             <Image
-              src="/assets/star.svg"
+              src="/assets/Star.svg"
               width={60}
               height={60}
               alt="html"

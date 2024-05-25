@@ -1,20 +1,8 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { FiArrowUpRight, FiDownload } from "react-icons/fi";
-
 import Typed from "typed.js";
 import BannerScroll from "./components/things/BannerScroll";
-import {
-  SiNextdotjs,
-  SiReact,
-  SiHtml5,
-  SiTailwindcss,
-  SiVite,
-  SiCss3,
-  SiJavascript,
-  SiFigma,
-} from "react-icons/si";
 import HeroSection from "./components/HomePageComponents/HeroSection";
 import AboutDetailsSection from "./components/HomePageComponents/AboutDetailsSection";
 

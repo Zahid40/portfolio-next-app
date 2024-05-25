@@ -27,9 +27,12 @@ function Navbar() {
 
   
   return (
-    <nav className={` ${scrolled ? "backdrop-brightness-50 backdrop-blur-[140px]" : "backdrop-brightness-120 backdrop-blur-3xl "} flex items-center justify-between gap-4 px-4 py-2 md:px-8 md:py-4 sticky top-0 z-50`}>
+    <nav className={` ${scrolled ? "backdrop-brightness-0 backdrop-blur-[140px]" : "backdrop-brightness-120 backdrop-blur-3xl "} flex items-center justify-between gap-4 px-6 py-4 md:px-8 md:py-4 sticky top-0 z-50`}>
       <div className="w-full flex justify-between items-center gap-4">
-        <img src="/android-chrome-512x512.png" alt="logo" className="w-12 md:w-14" />
+        <Link href={"/"}>
+        <img src="/assets/ZahidSig.svg" alt="logo" className="w-20 md:w-28" />
+        
+        </Link>
 
         <ul className="flex items-center justify-center md:gap-6 gap-4 text-sm md:text-sm">
           <li>

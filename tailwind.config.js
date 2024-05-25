@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'zbg': "#121212",
-        'zgary': "#252525",
+        'zbg': "#000000",
+        'zgary': "#131313",
         'zgray1': "#333333",
         'zgary2': "#6B6B6B",
         'zgary3': "#D9D9D9",
