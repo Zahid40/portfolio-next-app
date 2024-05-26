@@ -65,9 +65,10 @@ function Contact() {
       <div className="w-full h-full  flex md:flex-row justify-center md:p-8 p-4 flex-col">
         <Image
           src="/contactformimage.jpg"
-          alt="Picture of the author"
+          alt="Contact Form Feature Image"
           width={400}
           height={800}
+          quality={30}
           className="md:rounded-l-3xl md:rounded-tr-none rounded-bl-none rounded-t-3xl overflow-hidden md:w-2/5 w-full md:h-auto h-[400px]"
           // blurDataURL="data:..." automatically provided
           //placeholder="blur" // Optional blur-up while loading

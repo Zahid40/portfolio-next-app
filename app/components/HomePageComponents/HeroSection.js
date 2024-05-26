@@ -97,9 +97,13 @@ function HeroSection() {
             </div>
           </div>
           <div className="flex gap-8 py-12">
-            <a href="" className="btn border  rounded-full group border-zprimary-800  hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)] px-6 md:px-8 py-3 md:py-4 text-xs md:text-sm font-light  flex justify-center items-center gap-4">
+            <div className="flex flex-col justify-center items-center relative">
+
+            <a href="/ZahidCV.pdf" className="btn border  rounded-full group border-zprimary-800  hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)] px-6 md:px-8 py-3 md:py-4 text-xs md:text-sm font-light  flex justify-center items-center gap-4">
               Download CV <FiDownload className=" text-base md:text-xl" />
             </a>
+            <small className="text-xs font-light italic text-gray-400 absolute bottom-[-20px]">0.8 Mb</small>
+            </div>
             <Link href='/contact' className="btn bg-zprimary-800 px-6 md:px-8 py-3 md:py-4 text-xs md:text-sm font-light rounded-full  flex justify-center items-center gap-4 hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)]">
               Contact Me <FiArrowUpRight className="text-base md:text-xl" />
             </Link>

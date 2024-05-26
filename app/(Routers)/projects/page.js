@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 
-function Projects() {
+async function Projects() {
   const data = c_data.projects;
 
   // const [data, setdata] = useState(0);
@@ -29,7 +29,7 @@ function Projects() {
   return (
     <div className="rounded-xl overflow-hidden w-full h-full flex items-center justify-center">
       <div className="w-full h-full flex justify-center md:p-8 p-4 flex-col gap-12">
-        {Object.keys(data).map((projectName) => (
+        {await Object.keys(data).map((projectName) => (
           <Card key={projectName} data={data[projectName]} /> 
         ))}
       </div>
