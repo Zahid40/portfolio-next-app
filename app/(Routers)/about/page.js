@@ -54,9 +54,9 @@ function About() {
 
       </p>
 
-        <h2 className="text-4xl md:text-4xl pt-0 md:pt-0 pb-6 ">Let's Collaborate</h2>
+        <h2 className="text-4xl md:text-4xl pt-0 md:pt-0 pb-6 ">Let&apos;s Collaborate</h2>
       <p className="font-light text-base md:text-xl  pb-8 md:pb-12">
-      I'm always excited to take on new challenges and collaborate with other passionate individuals. Whether you have a question, a project idea, or just want to say hello, feel free to get in touch!
+      I&apos;m always excited to take on new challenges and collaborate with other passionate individuals. Whether you have a question, a project idea, or just want to say hello, feel free to get in touch!
 
       </p>
       </div>
