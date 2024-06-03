@@ -11,16 +11,16 @@ import { RxArrowTopRight } from "react-icons/rx";
 function Footer() {
   return (
     <>
-      <div className="bg-zgary overflow-hidden">
-        <div className="w-96 h-16 relative top-[-100px] shadow-[0_0px_1000px_30px_var(--zprimary-800)]"></div>
+      <div className="bg-gary overflow-hidden">
+        <div className="w-96 h-16 relative top-[-100px] shadow-[0_0px_1000px_30px_var(--primary-800)]"></div>
         <div className="p-4 pb-8 md:p-8 md:pb-16 flex flex-col md:flex-row gap-12 md:gap-2">
           <div className="w-full md:w-1/2 flex flex-col gap-8">
-            <h2 className="text-5xl font-medium">
+            <h2 className="text-5xl font-normal ">
               Designed and developed with passion. Crafted to inspire.
             </h2>
             <Link
               href="/contact"
-              className="bg-zprimary-600 hover:bg-zprimary-800 w-full md:w-1/2 p-2 flex justify-center items-center gap-6 hover:gap-12 rounded-full hover:shadow-[0_0px_40px_0px_var(--zprimary-800) group"
+              className="bg-primary-600 hover:bg-primary-800 w-full md:w-1/2 p-2 flex justify-center items-center gap-6 hover:gap-12 rounded-full hover:shadow-[0_0px_40px_0px_var(--primary-800) group"
             >
               Connect With Me
               <RxArrowTopRight className="text-3xl group-hover:rotate-[360deg]" />
@@ -31,30 +31,30 @@ function Footer() {
               <Link
                 target="_blank"
                 href="https://github.com/Zahid40"
-                className="flex justify-center items-center gap-2 py-2 px-4 border border-zgray1 rounded-full hover:border-zprimary-500 group hover:shadow-[0_0px_40px_0px_var(--zprimary-800)] hover:scale-105"
+                className="flex justify-center items-center gap-2 py-2 px-4 border border-gray1 rounded-full hover:border-primary-500 group hover:shadow-[0_0px_40px_0px_var(--primary-800)] hover:scale-105"
               >
                 <FaGithub className="" />
-                <span className="text-sm font-semibold text-zgary2 group-hover:text-zprimary-200">
+                <span className="text-sm font-semibold text-gary2 group-hover:text-primary-200">
                   Github
                 </span>
               </Link>
               <Link
                 target="_blank"
                 href="https://www.linkedin.com/in/zahid-ansari-53354926a/"
-                className="flex justify-center items-center gap-2 py-2 px-4 border border-zgray1 rounded-full group hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)] hover:scale-105"
+                className="flex justify-center items-center gap-2 py-2 px-4 border border-gray1 rounded-full group hover:border-primary-500 hover:shadow-[0_0px_40px_0px_var(--primary-800)] hover:scale-105"
               >
                 <FaLinkedin className="" />
-                <span className="text-sm font-semibold text-zgary2 group-hover:text-zprimary-200">
+                <span className="text-sm font-semibold text-gary2 group-hover:text-primary-200">
                   Linkedin
                 </span>
               </Link>
               <Link
                 target="_blank"
                 href="https://www.instagram.com/zahid_w83/"
-                className="flex justify-center items-center gap-2 py-2 px-4 border border-zgray1 rounded-full group hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)] hover:scale-105"
+                className="flex justify-center items-center gap-2 py-2 px-4 border border-gray1 rounded-full group hover:border-primary-500 hover:shadow-[0_0px_40px_0px_var(--primary-800)] hover:scale-105"
               >
                 <FaInstagram className="" />
-                <span className="text-sm font-semibold text-zgary2 group-hover:text-zprimary-200">
+                <span className="text-sm font-semibold text-gary2 group-hover:text-primary-200">
                   Instagram
                 </span>
               </Link>
@@ -63,20 +63,20 @@ function Footer() {
               <Link
                 target="_blank"
                 href="https://www.facebook.com/people/Zahid-Ansari/pfbid028ctFpE3qfYDUMTN2n4sJHW54ttWPfqMYm1PktRaLNzJ9xUbuR5iFmBwpKcSG238ol/?mibextid=qi2Omg&rdid=BINyma9I1MPVF5WL&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F3MQod3tx9MXBM7AL%2F%3Fmibextid%3Dqi2Omg"
-                className="flex justify-center items-center gap-2 py-2 px-4 border border-zgray1 rounded-full group hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)] hover:scale-105"
+                className="flex justify-center items-center gap-2 py-2 px-4 border border-gray1 rounded-full group hover:border-primary-500 hover:shadow-[0_0px_40px_0px_var(--primary-800)] hover:scale-105"
               >
                 <FaFacebook className="" />
-                <span className="text-sm font-semibold text-zgary2 group-hover:text-zprimary-200">
+                <span className="text-sm font-semibold text-gary2 group-hover:text-primary-200">
                   Facebook
                 </span>
               </Link>
               <Link
                 target="_blank"
                 href="mailto:zahidanasari17@gmail.com"
-                className="flex justify-center items-center gap-2 py-2 px-4 border border-zgray1 rounded-full group hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)] hover:scale-105"
+                className="flex justify-center items-center gap-2 py-2 px-4 border border-gray1 rounded-full group hover:border-primary-500 hover:shadow-[0_0px_40px_0px_var(--primary-800)] hover:scale-105"
               >
                 <BiLogoGmail className="" />
-                <span className="text-sm font-semibold text-zgary2 group-hover:text-zprimary-200">
+                <span className="text-sm font-semibold text-gary2 group-hover:text-primary-200">
                   Mail
                 </span>
               </Link>
@@ -85,36 +85,36 @@ function Footer() {
               <Link
                 target="_blank"
                 href="https://www.figma.com/@zahid8"
-                className="flex justify-center items-center gap-2 py-2 px-4 border border-zgray1 rounded-full group hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)] hover:scale-105"
+                className="flex justify-center items-center gap-2 py-2 px-4 border border-gray1 rounded-full group hover:border-primary-500 hover:shadow-[0_0px_40px_0px_var(--primary-800)] hover:scale-105"
               >
                 <FaFigma className="" />
-                <span className="text-sm font-semibold text-zgary2 group-hover:text-zprimary-200">
+                <span className="text-sm font-semibold text-gary2 group-hover:text-primary-200">
                   Figma
                 </span>
               </Link>
               <Link
                 target="_blank"
                 href="https://dribbble.com/zahid83"
-                className="flex justify-center items-center gap-2 py-2 px-4 border border-zgray1 rounded-full group hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)] hover:scale-105"
+                className="flex justify-center items-center gap-2 py-2 px-4 border border-gray1 rounded-full group hover:border-primary-500 hover:shadow-[0_0px_40px_0px_var(--primary-800)] hover:scale-105"
               >
                 <FaDribbble className="" />
-                <span className="text-sm font-semibold text-zgary2 group-hover:text-zprimary-200">
+                <span className="text-sm font-semibold text-gary2 group-hover:text-primary-200">
                   Dribbble
                 </span>
               </Link>
               <Link
                 target="_blank"
                 href="https://www.behance.net/zahidanasari"
-                className="flex justify-center items-center gap-2 py-2 px-4 border border-zgray1 rounded-full group hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)] hover:scale-105"
+                className="flex justify-center items-center gap-2 py-2 px-4 border border-gray1 rounded-full group hover:border-primary-500 hover:shadow-[0_0px_40px_0px_var(--primary-800)] hover:scale-105"
               >
                 <FaBehance className="" />
-                <span className="text-sm font-semibold text-zgary2 group-hover:text-zprimary-200">
+                <span className="text-sm font-semibold text-gary2 group-hover:text-primary-200">
                   Behance
                 </span>
               </Link>
             </div>
             <Link target="_blank" href="https://buymeacoffee.com/zahid40">
-              <div className="flex justify-center items-center gap-2 py-2 px-4 border border-zsecondary-600 rounded-full group hover:border-zsecondary-500 hover:shadow-[0_0px_20px_0px_var(--zsecondary-700)] hover:scale-105">
+              <div className="flex justify-center items-center gap-2 py-2 px-4 border border-secondary-600 rounded-full group hover:border-secondary-500 hover:shadow-[0_0px_20px_0px_var(--secondary-700)] hover:scale-105">
                 <SiBuymeacoffee />
                 Buy me a coffee
               </div>

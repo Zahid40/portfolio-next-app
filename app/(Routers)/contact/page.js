@@ -55,7 +55,7 @@ function Contact() {
     <div className="rounded-xl overflow-hidden w-full h-full flex flex-col items-center justify-center">
       <h1 className="text-6xl md:text-8xl pt-10 md:pt-20 pb-8 text-center">
         Contact Me
-        <span className="text-zprimary-600 text-9xl leading-0">.</span>
+        <span className="text-primary-600 text-9xl leading-0">.</span>
       </h1>
       <p className="font-light text-base md:text-xl text-center w-5/6 md:w-2/3 pb-8 md:pb-12">
         I&apos;d love to hear from you! Whether you have a question, a project
@@ -86,7 +86,7 @@ function Contact() {
             className="flex flex-col md:gap-6 gap-2"
           >
             <label htmlFor="name">
-              Name<span className="text-zsecondary-500"> * </span>
+              Name<span className="text-secondary-500"> * </span>
             </label>
             <input
               type="text"
@@ -101,7 +101,7 @@ function Contact() {
             <div className="flex flex-row w-full md:justify-between flex-wrap gap-4 md:gap-0">
               <div className="flex flex-col md:gap-6 gap-4 md:w-2/5 w-full">
                 <label htmlFor="email">
-                  E-mail<span className="text-zsecondary-500"> * </span>
+                  E-mail<span className="text-secondary-500"> * </span>
                 </label>
                 <input
                   type="email"
@@ -115,7 +115,7 @@ function Contact() {
               </div>
               <div className="flex flex-col md:gap-6 gap-4 md:w-2/5 w-full">
                 <label htmlFor="phone">
-                  Phone<span className="text-zsecondary-500"> * </span>
+                  Phone<span className="text-secondary-500"> * </span>
                 </label>
                 <input
                   type="tel"
@@ -130,7 +130,7 @@ function Contact() {
               </div>
             </div>
             <label htmlFor="message">
-              Message / Comment<span className="text-zsecondary-500 "> * </span>
+              Message / Comment<span className="text-secondary-500 "> * </span>
             </label>
             <textarea
               name="message"
@@ -155,7 +155,7 @@ function Contact() {
 
             <button
               type="submit"
-              className="border border-zprimary-700 hover:bg-zprimary-700 w-full p-4 rounded-md font-medium text-xl transition duration-300 ease-in-out flex items-center justify-center gap-4"
+              className="border border-primary-700 hover:bg-primary-700 w-full p-4 rounded-md font-medium text-xl transition duration-300 ease-in-out flex items-center justify-center gap-4"
               disabled={buttonDisable}
             >
               {buttonText}
@@ -164,7 +164,7 @@ function Contact() {
           </form>
           <span className="text-xs text-zgary2 font-medium italic m-2">
             Please fill out all fields marked with an asterisk (
-            <span className="text-zsecondary-500"> * </span>) as they are
+            <span className="text-secondary-500"> * </span>) as they are
             mandatory. Incomplete forms may result in delays in processing your
             request.
           </span>

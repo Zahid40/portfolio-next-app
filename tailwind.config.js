@@ -8,12 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'zbg': "#000000",
-        'zgary': "#1a1a1a",
-        'zgray1': "#333333",
-        'zgary2': "#6B6B6B",
-        'zgary3': "#D9D9D9",
-        'zprimary': {
+        'bg': "#000000",
+        'gary': "#1a1a1a",
+        'gray1': "#333333",
+        'gary2': "#6B6B6B",
+        'gary3': "#D9D9D9",
+        'primary': {
           '50': "#eff6ff",
           '100': "#dce9fd",
           '200': "#c0d9fd",
@@ -26,7 +26,7 @@ module.exports = {
           '900': "#203888",
           '950': "#182453",
         },
-        'zsecondary': {
+        'secondary': {
           '50': "#fefde8",
           '100': "#fffbc2",
           '200': "#fff588",
@@ -41,10 +41,7 @@ module.exports = {
         },
       },
     
-      fontFamily: {
-        sans: ["Product Sans", "sans-serif"],
-      },
-
+     
       animation: {
         gradient: "gradient 12s linear infinite",
         marquee: "marquee 12s linear infinite",

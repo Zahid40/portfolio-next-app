@@ -1,67 +1,13 @@
-import localFont  from "next/font/local";
+import { Poppins } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const productSans = localFont({
-  src: [
-    {
-      path: './fonts/ProductSans-Regular.ttf',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: './fonts/ProductSans-Bold.ttf',
-      weight: '700',
-      style: 'normal',
-    },
-    {
-      path: './fonts/ProductSans-BoldItalic.ttf',
-      weight: '700',
-      style: 'italic',
-    },
-    {
-      path: './fonts/ProductSans-Light.ttf',
-      weight: '300',
-      style: 'normal',
-    },
-    {
-      path: './fonts/ProductSans-LightItalic.ttf',
-      weight: '300',
-      style: 'italic',
-    },
-    {
-      path: './fonts/ProductSans-Medium.ttf',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: './fonts/ProductSans-MediumItalic.ttf',
-      weight: '500',
-      style: 'italic',
-    },
-    {
-      path: './fonts/ProductSans-Thin.ttf',
-      weight: '100',
-      style: 'normal',
-    },
-    {
-      path: './fonts/ProductSans-ThinItalic.ttf',
-      weight: '100',
-      style: 'italic',
-    },
-    {
-      path: './fonts/ProductSans-Black.ttf',
-      weight: '900',
-      style: 'normal',
-    },
-    {
-      path: './fonts/ProductSans-BlackItalic.ttf',
-      weight: '900',
-      style: 'italic',
-    },
-  ],
+const poppins = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+  subsets: ["latin"],
 });
 
 export const metadata = {
@@ -114,7 +60,7 @@ export default function RootLayout({ children }) {
         
         <title>Zahid - Portfolio</title>
       </head>
-      <body className={productSans.className}>
+      <body className={poppins.className}>
         <div className="flex items-center justify-center">
           <div className="max-w-[1440px] w-full min-w-80">
             <Navbar />

@@ -19,14 +19,12 @@ const BannerItem = ({ text }) => {
 };
 
 function BannerScroll() {
-  const items = ["Develop", "Create", "Design"];
+  const items = ["Develop", "Create", "Design","Develop", "Create", "Design","Develop", "Create", "Design"];
 
   return (
-    <Marquee direction={"right"} gradient gradientColor={"black"} className="flex">
+    <Marquee direction={"right"} gradient gradientColor={"#1a1a1a"} gradientWidth={100} className="flex">
       {items.map((item, index) => (
         <div className="flex justify-center items-center" key={index}>
-          <BannerItem text={item} />
-          <BannerItem text={item} />
           <BannerItem text={item} />
         </div>
       ))}
