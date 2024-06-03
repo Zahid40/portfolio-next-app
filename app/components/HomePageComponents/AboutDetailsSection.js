@@ -1,9 +1,10 @@
 import React from 'react'
+import Image from 'next/image'
 
 function AboutDetailsSection() {
   return (
     <div>
-      about
+      <Image src={"/images/zahidimage.png"} width={50} height={50}/>
     </div>
   )
 }

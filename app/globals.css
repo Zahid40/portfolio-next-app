@@ -158,7 +158,6 @@
 *{
   font-family: "Product Sans", sans-serif;
   font-weight: 500;
-  transition: all .3s;
 }
 *::-webkit-scrollbar{
   display: none;

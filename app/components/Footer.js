@@ -15,7 +15,7 @@ function Footer() {
         <div className="w-96 h-16 relative top-[-100px] shadow-[0_0px_1000px_30px_var(--zprimary-800)]"></div>
         <div className="p-4 pb-8 md:p-8 md:pb-16 flex flex-col md:flex-row gap-12 md:gap-2">
           <div className="w-full md:w-1/2 flex flex-col gap-8">
-            <h2 className="text-5xl">
+            <h2 className="text-5xl font-medium">
               Designed and developed with passion. Crafted to inspire.
             </h2>
             <Link

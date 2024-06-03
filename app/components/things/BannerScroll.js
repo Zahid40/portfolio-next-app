@@ -1,163 +1,36 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { Autoplay, FreeMode } from "swiper/modules";
+import Marquee from "react-fast-marquee";
+import Image from "next/image";
 
-function BannerScroll() {
+const BannerItem = ({ text }) => {
+  const bannertextclass = "text-3xl md:text-3xl font-normal mx-4";
   return (
     <>
-      <div className="relative flex overflow-x-hidden">
-        <div className="flex items-center py-1 animate-marquee whitespace-nowrap  bg-zbg">
-          <span className="text-xl mx-4">Develop</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto ">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Create</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Design</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Develop</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Create</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Design</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Develop</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Create</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Design</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Develop</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Create</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Design</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-        </div>
-
-        <div className="absolute top-0 py-1 flex items-center  animate-marquee2 whitespace-nowrap bg-zbg">
-          <span className="text-xl mx-4">Develop</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Create</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Design</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Develop</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Create</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Design</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Develop</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Create</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Design</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Develop</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Create</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-          <span className="text-xl mx-4">Design</span>
-          <span>
-            <div className="flex justify-center items-center w-12 h-auto">
-              <img src="/Zlogo_blue.svg" alt="" className="w-12 h-12 flex" />
-            </div>
-          </span>
-        </div>
-      </div>
+      <span className={bannertextclass}>{text}</span>
+      <Image
+        src="/assets/Star.svg"
+        width={60}
+        height={60}
+        alt={text}
+        className="h-16 w-16 p-[16px] col-span-2"
+      />
     </>
+  );
+};
+
+function BannerScroll() {
+  const items = ["Develop", "Create", "Design"];
+
+  return (
+    <Marquee direction={"right"} gradient gradientColor={"black"} className="flex">
+      {items.map((item, index) => (
+        <div className="flex justify-center items-center" key={index}>
+          <BannerItem text={item} />
+          <BannerItem text={item} />
+          <BannerItem text={item} />
+        </div>
+      ))}
+    </Marquee>
   );
 }
 

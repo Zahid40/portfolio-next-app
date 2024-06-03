@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FiArrowUpRight, FiDownload } from "react-icons/fi";
+import Marquee from "react-fast-marquee";
 
 function HeroSection() {
   return (
@@ -98,20 +99,27 @@ function HeroSection() {
           </div>
           <div className="flex gap-8 py-12">
             <div className="flex flex-col justify-center items-center relative">
-
-            <a href="/ZahidCV.pdf" className="btn border  rounded-full group border-zprimary-800  hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)] px-6 md:px-8 py-3 md:py-4 text-xs md:text-sm font-light  flex justify-center items-center gap-4">
-              Download CV <FiDownload className=" text-base md:text-xl" />
-            </a>
-            <small className="text-xs font-light italic text-gray-400 absolute bottom-[-20px]">0.8 Mb</small>
+              <a
+                href="/ZahidCV.pdf"
+                className="btn border  rounded-full group border-zprimary-800  hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)] px-6 md:px-8 py-3 md:py-4 text-xs md:text-sm font-light  flex justify-center items-center gap-4"
+              >
+                Download CV <FiDownload className=" text-base md:text-xl" />
+              </a>
+              <small className="text-xs font-light italic text-gray-400 absolute bottom-[-20px]">
+                0.8 Mb
+              </small>
             </div>
-            <Link href='/contact' className="btn bg-zprimary-800 px-6 md:px-8 py-3 md:py-4 text-xs md:text-sm font-light rounded-full  flex justify-center items-center gap-4 hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)]">
+            <Link
+              href="/contact"
+              className="btn bg-zprimary-800 px-6 md:px-8 py-3 md:py-4 text-xs md:text-sm font-light rounded-full  flex justify-center items-center gap-4 hover:border-zprimary-500 hover:shadow-[0_0px_40px_0px_var(--zprimary-800)]"
+            >
               Contact Me <FiArrowUpRight className="text-base md:text-xl" />
             </Link>
           </div>
         </div>
 
         <div className="relative flex gap-12 overflow-x-hidden  h-full">
-          <div className="absolute px-2 md:px-4 animate-marquee whitespace-nowrap flex justify-end items-center">
+          <Marquee>
             <span className="text-5xl  md:text-6xl font-normal mx-4">
               Develop
             </span>
@@ -142,9 +150,6 @@ function HeroSection() {
               alt="html"
               className="h-16 w-16 p-[16px] col-span-2"
             />
-          </div>
-
-          <div className="absolute top-0  px-2 animate-marquee2 whitespace-nowrap flex justify-center items-center">
             <span className="text-5xl  md:text-6xl font-normal mx-4">
               Develop
             </span>
@@ -175,7 +180,7 @@ function HeroSection() {
               alt="html"
               className="h-16 w-16 p-[16px] col-span-2"
             />
-          </div>
+          </Marquee>
         </div>
       </div>
     </>

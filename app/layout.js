@@ -116,7 +116,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={productSans.className}>
         <div className="flex items-center justify-center">
-          <div className="max-w-6xl w-full min-w-80">
+          <div className="max-w-[1440px] w-full min-w-80">
             <Navbar />
             {children}
             {/* <SpeedInsights /> */}

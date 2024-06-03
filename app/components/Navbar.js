@@ -12,7 +12,7 @@ import { LuComponent } from "react-icons/lu";
 function Navbar() {
   var pathname = usePathname();
 
-  const [NavState, setNavState] = useState(false);
+  const [NavState, setNavState] = useState(true);
   const [NavLocation, setNavLocation] = useState("Home");
 
   useEffect(() => {

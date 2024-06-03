@@ -10,7 +10,7 @@ function About() {
   return (
     <>
       <div className="p-4 md:p-8">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center"> 
           <Image
             src={"/images/zahidaboutimage.svg"}
             height={300}
