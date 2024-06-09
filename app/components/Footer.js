@@ -7,10 +7,50 @@ import { FaDribbble, FaBehance, FaFigma, FaGithub } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 import { SiBuymeacoffee } from "react-icons/si";
 import { RxArrowTopRight } from "react-icons/rx";
+import AnimatedCursor from "react-animated-cursor"
 
 function Footer() {
   return (
     <>
+    {/* <AnimatedCursor innerSize={18}
+      outerSize={18}
+      color='255, 255, 255'
+      outerAlpha={1.2}
+      innerScale={2.7}
+      outerScale={10}
+      trailingSpeed={1}
+      hasBlendMode={true}
+      outerStyle={{
+        mixBlendMode: 'exclusion',
+        border: '3px solid var(--secondary-600)'
+      }}
+      innerStyle={{
+        backgroundColor: 'var(--cursor-color)'
+      }}
+      clickables={[
+        'a',
+        'input[type="text"]',
+        'input[type="email"]',
+        'input[type="number"]',
+        'input[type="submit"]',
+        'input[type="image"]',
+        'label[for]',
+        'select',
+        'textarea',
+        'button',
+        '.link',
+        {
+          target: '.custom',
+          options: {
+            innerSize: 12,
+            outerSize: 12,
+            color: '150, 255, 255',
+            outerAlpha: 0.3,
+            innerScale: 0.7,
+            outerScale: 5
+          }
+        }
+      ]} /> */}
       <div className="bg-gary overflow-hidden">
         <div className="w-96 h-16 relative top-[-100px] shadow-[0_0px_1000px_30px_var(--primary-800)]"></div>
         <div className="p-4 pb-8 md:p-8 md:pb-16 flex flex-col md:flex-row gap-12 md:gap-2">

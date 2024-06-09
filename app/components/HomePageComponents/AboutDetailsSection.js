@@ -1,6 +1,7 @@
 import React from "react";
+import Link from "next/link"
 import Image from "next/image";
-import { FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUpRight } from "react-icons/fi"; 
 
 function AboutDetailsSection() {
   return (
@@ -13,10 +14,13 @@ function AboutDetailsSection() {
           detail and a love for coding, I enjoy bringing ideas to life through
           innovative and user-friendly designs.
         </p>
+        <Link href={"/about"}>
         <div className="flex  gap-4 justify-center items-center min-w-48 h-48 bg-primary-600 rounded-full ">
           <span className="text-md font-medium">About Me</span>
           <FiArrowUpRight className="text-4xl" />
         </div>
+        
+        </Link>
       </div>
     </div>
   );
