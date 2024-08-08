@@ -70,7 +70,7 @@ function HeroSection() {
       >
         <div className="flex flex-col  justify-center items-center md:px-8 px-4 md:py-16 py-8 flex-wrap relative">
           <div className=" flex flex-col md:flex-row  justify-center items-center gap-6 ">
-            <div className="absolute ">
+            {/* <div className="absolute ">
               {icons.map((icon, index) => {
                 return (
                   <Image
@@ -83,7 +83,7 @@ function HeroSection() {
                   />
                 );
               })}
-            </div>
+            </div> */}
             <div className="md:w-3/5 flex flex-col justify-center items-center gap-6">
               <p className="text-xs md:text-base font-normal tracking-wide">
                 Hello world - this is a portfolio page
