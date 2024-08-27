@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import Hero1 from '@/app/components/ComponentLibrary/Hero1'
+import Hero1 from '@/components/ComponentLibrary/Hero1'
 function page() {
   
   return (

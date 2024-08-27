@@ -4,11 +4,10 @@ export default function robots() {
         {
           userAgent: 'Googlebot',
           allow: ['/'],
-          disallow: ['/private/'],
         },
         {
           userAgent: ['Applebot', 'Bingbot'],
-          disallow: ['/'],
+          allow: ['/'],
         },
       ],
       sitemap: 'https://zahid.vercel.app/sitemap.xml',

@@ -1,8 +1,9 @@
 import { Poppins } from "next/font/google";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { ThemeProvider } from "@/components/providers/theme-provider";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -11,62 +12,88 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Zahid - Portfolio",
-  description: "Designing",
+  metadataBase: new URL('https://zahid.vercel.app'),
+  title: "Zahid 's Portfolio",
+  description: "Zahid's portfolio showcasing design skills and projects.",
+  authors: [{ name: 'Zahid' }],
+  creator: 'Zahid',
+  publisher: 'Zahid',
+  keywords: ['Next.js', 'React', 'JavaScript'],
+
+  icons: {
+    icon: [
+      { url: '/icons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icons/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/icons/icon.png' },
+      new URL('/icons/icon.png', 'https://zahid.vercel.app'),
+      { url: '/icons/icon-dark.png', media: '(prefers-color-scheme: dark)' },
+    ],
+    shortcut: ['/icons/shortcut-icon.png'],
+    apple: [
+      { url: '/icons/apple-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/icons/apple-icon-x3.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      {
+        rel: 'apple-touch-icon-precomposed',
+        url: '/icons/apple-touch-icon-precomposed.png',
+      },
+      { 
+        rel: 'mask-icon', 
+        url: '/icons/safari-pinned-tab.svg', 
+        color: '#5bbad5' 
+      },
+    ],
+  },
+  msapplication: {
+    TileColor: '#da532c',
+  },
+  manifest: '/site.webmanifest',
+
+
+
+  openGraph: {
+    title: "Zahid 's Portfolio",
+    description: "Zahid's portfolio showcasing design skills and projects.",
+    url: 'https://zahid.vercel.app',
+    siteName: "Zahid 's Portfolio",
+    images: '/images/ogimage.png',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Zahid 's Portfolio",
+    description: "Zahid's portfolio showcasing design skills and projects.",
+    siteId: '1467726470533754880',
+    creator: '@zahid',
+    creatorId: '1467726470533754880',
+    images: ['https://zahid.vercel.app/images/ogimage.png'], // Must be an absolute URL
+  },
+  
+
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" suppressHydrationWarning >
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Zahid's portfolio showcasing design skills and projects." />
-        <meta name="author" content="Zahid" />
-        <meta name="keywords" content="portfolio, design, Zahid, web design, graphic design, projects" />
-        
-        <meta property="og:title" content="Zahid - Portfolio" />
-        <meta property="og:description" content="Designing" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://zahid.vercel.app" />
-        <meta property="og:image" content="https://zahid.vercel.app/zahid_image.png" />
-        
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Zahid - Portfolio" />
-        <meta name="twitter:description" content="Designing" />
-        <meta name="twitter:image" content="https://zahid.vercel.app/zahid_image.png" />
-        
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
-        <meta name="msapplication-TileColor" content="#000000" />
-        <meta name="theme-color" content="#000000" />
-        
-        <title>Zahid - Portfolio</title>
       </head>
       <body className={poppins.className}>
         <div className="flex items-center justify-center">
           <div className="max-w-[1440px] w-full min-w-80">
-            <Navbar />
-            {children}
-            {/* <SpeedInsights /> */}
-            <Footer/>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="dark"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <Navbar />
+              {children}
+              <SpeedInsights />
+              <Footer />
+            </ThemeProvider>
           </div>
         </div>
       </body>

@@ -1,5 +1,5 @@
 import React  from "react";
-import Card from "@/app/components/projectsComponents/Card";
+import Card from "@/components/projectsComponents/Card";
 import c_data from '@/public/projectdata.json'
 
 export const metadata = {

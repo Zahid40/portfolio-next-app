@@ -1,4 +1,4 @@
-import loader from "./components/things/loader";
+import loader from "../components/things/loader";
 
 export default function Loading() {
   // Or a custom loading skeleton component
