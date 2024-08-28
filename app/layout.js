@@ -89,8 +89,8 @@ export default function RootLayout({ children }) {
               "@type": "Person",
               "name": "Zahid",
               "jobTitle": "Web Developer & Designer",
-              "description":  ${description},
-              "url":  ${url},
+              "description":  "${description}",
+              "url":  "${url}",
               "sameAs": [
                 "https://www.linkedin.com/in/yourprofile",
                 "https://twitter.com/yourprofile",
@@ -99,15 +99,15 @@ export default function RootLayout({ children }) {
               "worksFor": {
                 "@type": "Organization",
                 "name": "Zahid Web Solutions",
-                "url": ${url}
+                "url": "${url}"
               },
-              "knowsAbout": ${keywords},
+              "knowsAbout": "${keywords}",
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "Customer Service",
-                "email": ${MyEmail},
-                "telephone": ${MyPhone},
-                "url": {${url}/contact}
+                "email": "${MyEmail}",
+                "telephone":"${MyPhone}",
+                "url": "${url}/contact"
               }
             }
           `}
