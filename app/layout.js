@@ -82,53 +82,19 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Zahid",
-              "jobTitle": "Web Developer & Designer",
-              "description":  "${description}",
-              "url":  "${url}",
-              "sameAs": [
-                "https://www.linkedin.com/in/yourprofile",
-                "https://twitter.com/yourprofile",
-                "https://github.com/yourprofile"
-              ],
-              "worksFor": {
-                "@type": "Organization",
-                "name": "Zahid Web Solutions",
-                "url": "${url}"
-              },
-              "knowsAbout": "${keywords}",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "Customer Service",
-                "email": "${MyEmail}",
-                "telephone":"${MyPhone}",
-                "url": "${url}/contact"
-              }
-            }
-          `}
-        </script>
       </head>
       <body className={poppins.className}>
-        <div className="flex items-center justify-center">
-          <div className="max-w-[1440px] w-full min-w-80">
-            <ThemeProvider
-              attribute="class"
-              defaultTheme="dark"
-              enableSystem
-              disableTransitionOnChange
-            >
-              <Navbar />
-              {children}
-              <SpeedInsights />
-              <Footer />
-            </ThemeProvider>
-          </div>
-        </div>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+          <SpeedInsights />
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

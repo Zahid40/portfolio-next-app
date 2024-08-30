@@ -14,10 +14,24 @@
     },
     {
       "src": "/icons/maskable_icon.png",
-      "sizes": "1080x1080",
+      "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "maskable"
     }
+  ],
+  "screenshots": [
+    {
+      "src": "https://i.pinimg.com/originals/a9/88/c1/a988c1bf6e66482d5292e2c0c52f2dde.gif",
+      "sizes": "320x640",
+      "type": "image/gif",
+      "form_factor": "narrow"
+    } ,
+    {
+      "src": "/images/ogimage.png",
+      "sizes": "1200x631",
+      "type": "image/png",
+      "form_factor": "wide"
+    } 
   ],
   "theme_color": "#000000",
   "background_color": "#000000",
