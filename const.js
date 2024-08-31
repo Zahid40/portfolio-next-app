@@ -35,6 +35,32 @@ export const keywords = [
   "Digital Product Design",
 ];
 
+export const shemaorgstructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Zahid",
+  jobTitle: "Web Developer & Designer",
+  description: description,
+  url: url,
+  sameAs: [
+    MyGithub,MyInstagram,MyWhatsapp,MyFacebook,MyTwitter
+  ],
+  worksFor: {
+    "@type": "Organization",
+    name: "Zahid - Professional Web Developer & Designer",
+    url: url
+  },
+  knowsAbout: keywords,
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "Customer Service",
+    email: MyEmail,
+    telephone: MyPhone,
+    url: url
+  }
+};
+
+
 //Social Information
 export const MyEmail = "zahidanasari17@gmail.com";
 export const MyPhone = "+91 9625162488";

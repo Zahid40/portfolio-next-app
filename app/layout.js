@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { ThemeProvider } from "@/components/providers/theme-provider";
-import { MyEmail, MyPhone, appname, description, keywords, url } from "@/const";
+import { MyEmail, MyPhone, appname, description, keywords, url , shemaorgstructuredData } from "@/const";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -76,18 +76,26 @@ export const metadata = {
   },
 };
 
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+          key="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(shemaorgstructuredData), 
+          }}
+        />
       </head>
       <body className={poppins.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          enableSystem
           disableTransitionOnChange
         >
           <Navbar />

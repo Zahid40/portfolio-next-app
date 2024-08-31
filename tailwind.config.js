@@ -18,6 +18,12 @@ module.exports = {
     },
     extend: {
       colors: {
+
+        backgroundImage: {
+          'gradient-one': 'linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%)',
+          'gradient-two': 'linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%)',
+        },
+        
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
