@@ -35,30 +35,7 @@ export const keywords = [
   "Digital Product Design",
 ];
 
-export const shemaorgstructuredData = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Zahid",
-  jobTitle: "Web Developer & Designer",
-  description: description,
-  url: url,
-  sameAs: [
-    MyGithub,MyInstagram,MyWhatsapp,MyFacebook,MyTwitter
-  ],
-  worksFor: {
-    "@type": "Organization",
-    name: "Zahid - Professional Web Developer & Designer",
-    url: url
-  },
-  knowsAbout: keywords,
-  contactPoint: {
-    "@type": "ContactPoint",
-    contactType: "Customer Service",
-    email: MyEmail,
-    telephone: MyPhone,
-    url: url
-  }
-};
+
 
 
 //Social Information
@@ -84,6 +61,29 @@ export const MyBehance = `https://www.behance.net/${MyBehanceUsername}`;
 export const MyBuyMeACoffeeUsername = "zahid40";
 export const MyBuyMeACoffee = `https://buymeacoffee.com/${MyBuyMeACoffeeUsername}`;
 
-//
+export const shemaorgstructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Zahid",
+  jobTitle: "Web Developer & Designer",
+  description: description,
+  url: url,
+  sameAs: [
+    MyGithub,MyInstagram,MyWhatsapp,MyFacebook,MyTwitter
+  ],
+  worksFor: {
+    "@type": "Organization",
+    name: "Zahid - Professional Web Developer & Designer",
+    url: url
+  },
+  knowsAbout: keywords,
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "Customer Service",
+    email: MyEmail,
+    telephone: MyPhone,
+    url: url
+  }
+};
 
 
