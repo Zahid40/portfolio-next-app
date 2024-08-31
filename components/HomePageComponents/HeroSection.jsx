@@ -29,18 +29,10 @@ function HeroSection() {
       <div className="py-12 md:py-24  flex flex-col justify-between relative  z-20 backdrop-blur-[140px]  bg-contain bg-no-repeat ">
         <div className="flex flex-col  justify-center items-center md:px-8 px-4 md:py-16 py-8 flex-wrap relative">
           <div className=" flex flex-col md:flex-row  justify-center items-center gap-6 ">
-            <div className="md:w-3/5 flex flex-col justify-center items-center gap-6">
-              <p className="text-xs md:text-base font-normal tracking-wide">
-                Hello world - this is a portfolio page
-              </p>
-              <h2 className=" md:text-6xl text-5xl text-center">
-                My Name is{" "}
-                <span className="text-primary-400 leading-normal">Zahid</span>
-                <br />
-                Frontend Web <br />{" "}
-                <span className="h-20 block" ref={el}>
-                  Developer
-                </span>
+            <div className=" flex flex-col justify-center items-center gap-6">
+              <h2 className=" md:text-8xl text-6xl text-center">
+                {"{ "}Creative & Experienced {" "}
+                 <br/>Web Developer {" }"}
               </h2>
               <p className="text-xs md:text-base font-normal text-center w-2/3 text-neutral-300 tracking-wide">
                 In addition to being a web developer, I am also a skilled web

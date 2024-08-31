@@ -1,3 +1,5 @@
+//varible Dependency Imports 
+
 //App
 export const appname = "Zahid 's Portfolio";
 export const url = "https://zahid.vercel.app";
@@ -41,6 +43,7 @@ export const keywords = [
 //Social Information
 export const MyEmail = "zahidanasari17@gmail.com";
 export const MyPhone = "+91 9625162488";
+export const MyAddress = "Delhi , India";
 export const MyWhatsapp = `https://wa.me/${MyPhone}`;
 export const MyInstagramUsername = "zahid_w83";
 export const MyInstagram = `https://www.instagram.com/${MyInstagramUsername}`;
@@ -60,6 +63,24 @@ export const MyBehanceUsername = "zahidanasari";
 export const MyBehance = `https://www.behance.net/${MyBehanceUsername}`;
 export const MyBuyMeACoffeeUsername = "zahid40";
 export const MyBuyMeACoffee = `https://buymeacoffee.com/${MyBuyMeACoffeeUsername}`;
+export const MySkills = [
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "TypeScript",
+  "React.js",
+  "Vite.js",
+  "Next.js",
+  "Figma",
+  "Photoshop",
+  "Adobe Illustrator",
+  "TailwindCSS",
+  "Bootstrap",
+  "Node.js",
+  "Express.js",
+  "MongoDB"
+];
+
 
 export const shemaorgstructuredData = {
   "@context": "https://schema.org",
@@ -85,5 +106,3 @@ export const shemaorgstructuredData = {
     url: url
   }
 };
-
-

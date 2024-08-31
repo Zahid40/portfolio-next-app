@@ -1,7 +1,7 @@
-import Image from "next/image";
 import HeroSection from "../components/HomePageComponents/HeroSection";
 import DetailsSection from "@/components/HomePageComponents/DetailsSection";
 import FloatingSlides from "@/components/HomePageComponents/FloatingSlides";
+import MySkillsSection from "@/components/HomePageComponents/MySkillsSection";
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <DetailsSection/>
       <FloatingSlides/>
+      <MySkillsSection/>
     </>
   );
 }
