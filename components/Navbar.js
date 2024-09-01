@@ -55,7 +55,7 @@ function Navbar() {
 
   return (
   
-      <nav className="flex items-center justify-between gap-4 px-6 py-4 md:px-8 md:py-4 sticky md:sticky top-0 md:top-0 z-50 bg-black ">
+      <nav className="flex items-center justify-between gap-4 px-6 py-4 md:px-8 md:py-4 w-full fixed md:fixed top-0 md:top-0 z-50 bg-black ">
         <div className="w-full flex justify-between items-center gap-4">
           <Link href={"/"}>
             <img

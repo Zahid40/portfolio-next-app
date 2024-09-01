@@ -21,6 +21,13 @@ module.exports = {
         'gradient-one': 'linear-gradient(-60deg, #A6B7F2 -10%, #204AD4 90%)',
         'gradient-two': 'linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%)',
       },
+      boxShadow: {
+        'inner-md': 'inset 0 4px 6px -1px rgb(0 0 0 / 0.1), inset 0 2px 4px -2px rgb(0 0 0 / 0.1)',
+        'inner-lg': 'inset 0 10px 15px -3px rgb(0 0 0 / 0.1), inset 0 4px 6px -4px rgb(0 0 0 / 0.1)',
+        'inner-xl': 'inset 0 20px 25px -5px rgb(0 0 0 / 0.1), inset 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+        'inner-2xl': 'inset 0 0px 50px -8px rgb(0 0 0 / 0.25)',
+        'inner-3xl': 'inset 0 0px 60px 15px rgb(0 0 0 / 0.3)',
+      },
       colors: {
 
 
