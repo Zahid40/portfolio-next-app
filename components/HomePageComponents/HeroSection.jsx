@@ -112,7 +112,7 @@ function HeroSection() {
   return (
     <>
       <div className="relative w-full h-auto overflow-hidden">
-        <div className="absolute bottom-24 md:-bottom-12  w-[500px] sm:w-[800px]  md:w-[1000px] lg:w-[1200px] aspect-video opacity-90 drop-shadow-2xl ">
+        <div className="absolute z-10 bottom-24 md:-bottom-12  w-spiralimage  aspect-video opacity-90 drop-shadow-2xl ">
           <Image
             src={"/assets/llline.svg"}
             fill
@@ -123,10 +123,10 @@ function HeroSection() {
             className="bottom-12"
           />
         </div>
-        <div className="w-full  pb-12 pt-32 px-8 md:px-16 max-w-6xl m-auto min-h-[850px] h-[850px] md:h-svh  relative ">
-          <div className="absolute top-12 md:top-24 -left-3 md:left-12   ">
+        <div className="w-full  pb-12 pt-[20vh] px-main max-w-6xl m-auto h-svh  relative ">
+          <div className="absolute top-20 md:top-24 -left-3 md:left-12   ">
             <div className="w-full h-full absolute shadow-inner-2xl shadow-black"></div>
-            <Sparkle className="md:w-12 md:h-12 h-6 w-6 absolute bottom-28 left-6 md:-bottom-48  md:-left-12 text-5xl font-extrabold  text-primary-600 " />
+            <Sparkle className="md:w-12 md:h-12 h-8 w-8 absolute bottom-28 -right-52 md:-bottom-48  md:-left-12 text-5xl font-extrabold  text-primary-600 " />
             <DynamicPattern
               strokeColor="#444"
               strokeWidth={1}
@@ -134,11 +134,11 @@ function HeroSection() {
               height={200}
             />
           </div>
-          <div className="absolute top-64 md:top-80 -right-3 md:right-12 ">
+          <div className="absolute top-96 md:top-80 -right-3 md:right-12 ">
             <div className="w-full h-full absolute shadow-inner-2xl shadow-black"></div>
             <Sparkle
               fill="#204AD4"
-              className="md:w-12 md:h-12 h-6 w-6 absolute bottom-6 md:bottom-80 md:-right-12  text-primary-500 "
+              className="md:w-12 md:h-12 h-8 w-8 absolute bottom-6 md:bottom-80 right-96 md:-right-12  text-primary-500 "
             />
             <DynamicPattern
               strokeColor="#444"
@@ -147,13 +147,13 @@ function HeroSection() {
               height={200}
             />
           </div>
-          <div className="relative flex flex-col justify-between items-center h-full w-full ">
+          <div className="relative flex flex-col justify-between items-center h-full w-full z-20">
             <div className="w-full flex flex-col gap-4 md:gap-6">
-              <div className="w-full flex flex-row items-end justify-around">
-                <h2 className=" md:text-8xl text-4xl  inline md:pb-3 w-full md:w-auto text-left">
+              <div className="w-full gap-2 flex flex-row items-end justify-around">
+                <h2 className=" md:text-8xl text-[8vw]  inline md:pb-3 w-full md:w-auto text-left">
                   {"{ "}Creative &
                 </h2>
-                <div className="relative h-16 md:h-40 w-52 md:w-52">
+                <div className="relative h-[15vw] md:h-40 w-[50vw] md:w-52">
                   <Image
                     src={"/images/herobannerimage1.svg"}
                     fill
@@ -164,14 +164,14 @@ function HeroSection() {
                   />
                 </div>
               </div>
-              <div className="w-full flex flex-row items-center justify-around">
-                <div className=" md:h-24 h-16 w-28 md:w-52 bg-gradient-to-t from-primary-600 to-background rounded-2xl relative">
+              <div className="w-full flex gap-2 flex-row items-center justify-around">
+                <div className=" md:h-24 h-16 w-[30vw] md:w-52 bg-gradient-to-t from-primary-600 to-background rounded-2xl relative">
                   <Carousel
                     opts={{
                       align: "start",
                     }}
                     orientation="vertical"
-                    className="m-auto w-28 md:w-52 absolute -top-2 md:-top-6  "
+                    className="m-auto w-[30vw] md:w-52 absolute -top-2 md:-top-6  "
                     plugins={[plugin.current]}
                   >
                     <CarouselContent className="mt-2 md:-mt-2  h-16 md:h-32 rounded-2xl ">
@@ -182,7 +182,7 @@ function HeroSection() {
                         >
                           <div className="py-0 md:py-2">
                             <Card className=" rounded-2xl bg-transparent  border-none shadow-none ">
-                              <CardContent className="flex items-center justify-center p-0 h-16 md:h-[100px] w-28 md:w-52 ">
+                              <CardContent className="flex items-center justify-center p-0 h-16 md:h-[100px] w-[30vw] md:w-52 ">
                                 {ele.icon}
                               </CardContent>
                             </Card>
@@ -196,16 +196,16 @@ function HeroSection() {
                     </div>
                   </Carousel>
                 </div>
-                <h2 className=" md:text-8xl text-4xl text-center">
+                <h2 className=" md:text-8xl text-[9vw] text-center">
                   Experienced <br />
                 </h2>
               </div>
-              <h2 className=" md:text-8xl text-4xl text-center">
+              <h2 className=" md:text-8xl text-[9vw] text-center">
                 Web Developer {" }"}
               </h2>
             </div>
 
-            <div className="flex flex-col md:flex-row justify-between items-center w-full  pt-16">
+            <div className="flex flex-col md:flex-row justify-between items-center pt-16 gap-6 w-full">
               <p className="col-span-2 text-xs md:text-sm font-light md:w-96">
                 With 4 years of coding experience and 1 year in full-stack
                 development, creating applications is my passion, turned into a
@@ -213,22 +213,22 @@ function HeroSection() {
                 development, creating applications is my passion, turned into a
                 profession.
               </p>
-              <div className="md:space-x-4 space-y-2">
+              <div className="md:space-x-4 space-y-4 w-full md:w-auto">
                 <Button
                   variant="outline"
-                  className="text-white font-light px-8 w-full md:w-auto"
+                  className="text-white font-normal text-sm px-8 w-full md:w-auto shadow-md shadow-primary-400/20"
                   asChild
                 >
                   <Link href={"/ZahidCV.pdf"}>
-                    Download CV <FiDownload className="ml-2" />
+                    Download CV <FiDownload className="ml-2 text-lg" />
                   </Link>
                 </Button>
                 <Button
-                  className="bg-gradient-one text-white font-light px-8 w-full md:w-auto"
+                  className="bg-gradient-one text-white font-normal text-sm px-8 w-full md:w-auto shadow-md shadow-primary-400/20"
                   asChild
                 >
                   <Link href={"/contact"}>
-                    Let&apos;s Talk <FiArrowUpRight className="ml-2" />
+                    Let&apos;s Talk <FiArrowUpRight className="ml-2 text-2xl" />
                   </Link>
                 </Button>
               </div>

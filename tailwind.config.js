@@ -17,20 +17,43 @@ module.exports = {
       },
     },
     extend: {
+      fontSize: {
+        "clamp-xs": "clamp(0.75rem, 1.5vw, 0.875rem)", // xs
+        "clamp-base": "clamp(1rem, 2.5vw, 1.125rem)", // base
+        "clamp-xl": "clamp(1.2rem, 2.7vw, 1.5rem)", // base
+        "clamp-2xl": "clamp(1.5rem, 3vw, 1.875rem)", // 2xl
+        "clamp-3xl": "clamp(1.875rem, 3.5vw, 2.25rem)", // 3xl
+        "clamp-4xl": "clamp(2.25rem, 4vw, 2.75rem)", // 4xl
+        "clamp-5xl": "clamp(3rem, 5vw, 3.75rem)", // 5xl
+        "clamp-6xl": "clamp(3.75rem, 6vw, 4.5rem)", // 6xl
+        "clamp-7xl": "clamp(4.5rem, 7vw, 5.25rem)", // 7xl
+        "clamp-8xl": "clamp(6rem, 8vw, 7rem)", // 8xl
+        "clamp-9xl": "clamp(8rem, 9vw, 9rem)", // 9xl
+      },
+      padding: {
+        px: {
+          main: "clamp(2rem, 3rem, 4rem)",
+        },
+        main: "clamp(2rem, 3vw, 4rem)",
+      },
+      width:{
+        spiralimage:"clamp(500px , 130vw , 1200px)"
+      },
       backgroundImage: {
-        'gradient-one': 'linear-gradient(-60deg, #A6B7F2 -10%, #204AD4 90%)',
-        'gradient-two': 'linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%)',
+        "gradient-one": "linear-gradient(-60deg, #A6B7F2 -10%, #204AD4 90%)",
+        "gradient-two": "linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%)",
       },
       boxShadow: {
-        'inner-md': 'inset 0 4px 6px -1px rgb(0 0 0 / 0.1), inset 0 2px 4px -2px rgb(0 0 0 / 0.1)',
-        'inner-lg': 'inset 0 10px 15px -3px rgb(0 0 0 / 0.1), inset 0 4px 6px -4px rgb(0 0 0 / 0.1)',
-        'inner-xl': 'inset 0 20px 25px -5px rgb(0 0 0 / 0.1), inset 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-        'inner-2xl': 'inset 0 0px 50px -8px rgb(0 0 0 / 0.25)',
-        'inner-3xl': 'inset 0 0px 60px 15px rgb(0 0 0 / 0.3)',
+        "inner-md":
+          "inset 0 4px 6px -1px rgb(0 0 0 / 0.1), inset 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+        "inner-lg":
+          "inset 0 10px 15px -3px rgb(0 0 0 / 0.1), inset 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+        "inner-xl":
+          "inset 0 20px 25px -5px rgb(0 0 0 / 0.1), inset 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+        "inner-2xl": "inset 0 0px 50px -8px rgb(0 0 0 / 0.25)",
+        "inner-3xl": "inset 0 0px 60px 15px rgb(0 0 0 / 0.3)",
       },
       colors: {
-
-
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
