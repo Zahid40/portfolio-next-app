@@ -25,6 +25,7 @@
     "react-animated-cursor": "^2.11.2",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.4",
+    "react-icon": "^1.0.0",
     "react-icons": "^5.1.0",
     "schema-dts": "^1.1.2",
     "swiper": "^11.1.1",

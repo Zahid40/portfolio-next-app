@@ -31,17 +31,17 @@ module.exports = {
         "clamp-9xl": "clamp(8rem, 9vw, 9rem)", // 9xl
       },
       padding: {
-        px: {
-          main: "clamp(2rem, 3rem, 4rem)",
-        },
         main: "clamp(2rem, 3vw, 4rem)",
       },
-      width:{
-        spiralimage:"clamp(500px , 130vw , 1200px)"
+      width: {
+        spiralimage: "clamp(500px , 130vw , 1200px)",
       },
       backgroundImage: {
         "gradient-one": "linear-gradient(-60deg, #A6B7F2 -10%, #204AD4 90%)",
-        "gradient-two": "linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%)",
+        "gradient-red": "linear-gradient(60deg, #ff7e5f 0%, #feb47b 100%)",
+        "gradient-lightpink": "linear-gradient(135deg, #F44336 0%, #ffc9c5 100%)",
+        "gradient-lightgreen": "linear-gradient(135deg, #b4ffb7 0%, #8BC34A 100%)",
+        "gradient-lightblue": "linear-gradient(135deg, #68bcff 0%, #d4ecf7 100%)",
       },
       boxShadow: {
         "inner-md":
@@ -113,10 +113,22 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+
+        "shake-animation": {
+          "0%": { transform: "translate(0, 0)" },
+          "1.78571%": { transform: "translate(5px, 0)" },
+          "3.57143%": { transform: "translate(0, 0)" },
+          "5.35714%": { transform: "translate(5px, 0)" },
+          "7.14286%": { transform: "translate(0, 0)" },
+          "8.92857%": { transform: "translate(5px, 0)" },
+          "10.71429%": { transform: "translate(0, 0)" },
+          "100%": { transform: "translate(0, 0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "shake": "shake-animation 4.72s ease infinite",
       },
     },
   },
