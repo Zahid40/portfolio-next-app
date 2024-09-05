@@ -207,7 +207,7 @@ function HeroSection() {
 
             <div className="flex flex-col md:flex-row justify-between items-center pt-16 gap-6 w-full">
               <p className="col-span-2 text-xs md:text-sm font-light md:w-96">
-                Hello ! I'm an experienced web developer and designer , specialized in React frameworks like Next.js etc and Javascript based in <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-white to-green-500">India</span>
+                Hello ! I&apos;m an experienced web developer and designer , specialized in React frameworks like Next.js etc and Javascript based in <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-white to-green-500">India</span>
               </p>
               <div className="md:space-x-4 space-y-4 w-full md:w-auto">
                 <Button
