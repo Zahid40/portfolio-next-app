@@ -1,4 +1,24 @@
 //varible Dependency Imports 
+import {
+  FaHtml5,
+  FaCss3,
+  FaJsSquare,
+  FaReact,
+  FaNodeJs,
+  FaBootstrap,
+  FaFigma,
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiVite,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiMongodb,
+  SiExpress,
+  SiAdobeillustrator,
+  SiAdobephotoshop,
+  SiShadcnui,
+} from "react-icons/si";
 
 //App
 export const appname = "Zahid 's Portfolio";
@@ -73,13 +93,47 @@ export const MySkills = [
   "Next.js",
   "Figma",
   "Photoshop",
-  "Adobe Illustrator",
+  "Illustrator",
   "TailwindCSS",
   "Bootstrap",
   "Node.js",
   "Express.js",
   "MongoDB"
 ];
+
+
+// Function to get the icon object
+export const getIconObject = (iconName, classNameStyleForIcon) => {
+  const icons = {
+    HTML5: FaHtml5,
+    CSS3: FaCss3,
+    JavaScript: FaJsSquare,
+    TypeScript: SiTypescript,
+    "React.js": FaReact,
+    "Vite.js": SiVite,
+    "Next.js": SiNextdotjs,
+    "Node.js": FaNodeJs,
+    "Express.js": SiExpress,
+    MongoDB: SiMongodb,
+    TailwindCSS: SiTailwindcss,
+    ShadCnUi: SiShadcnui,
+    Bootstrap: FaBootstrap,
+    Figma: FaFigma,
+    "Adobe Photoshop": SiAdobephotoshop,
+    "Adobe Illustrator": SiAdobeillustrator,
+  };
+
+  const IconComponent = icons[iconName];
+
+  if (!IconComponent) {
+    return null;
+  }
+
+  return {
+    title: iconName,
+    icon: <IconComponent className={classNameStyleForIcon} />,
+  };
+};
 
 
 export const shemaorgstructuredData = {

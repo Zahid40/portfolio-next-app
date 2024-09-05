@@ -24,6 +24,7 @@ function DetailsSection() {
                 <div className="w-8 h-8 rounded-full relative overflow-hidden border border-neutral-400">
                   <Image
                     src={"/images/logo.svg"}
+                    alt="client-image"
                     fill
                     style={{
                       objectFit: "contain", // cover, contain, none
@@ -33,6 +34,7 @@ function DetailsSection() {
                 <div className="w-8 h-8 rounded-full relative right-2 overflow-hidden border border-neutral-400 ">
                   <Image
                     src={"/images/logo.svg"}
+                    alt="client-image"
                     fill
                     style={{
                       objectFit: "contain", // cover, contain, none
@@ -42,6 +44,7 @@ function DetailsSection() {
                 <div className="w-8 h-8 rounded-full relative right-4 overflow-hidden border border-neutral-400 ">
                   <Image
                     src={"/images/logo.svg"}
+                    alt="client-image"
                     fill
                     style={{
                       objectFit: "contain", // cover, contain, none
@@ -76,7 +79,7 @@ function DetailsSection() {
           <h2 className="col-span-1 text-center font-light  text-2xl md:text-4xl ">
             HI!. I&apos;m a Full-Stack Web Developer
           </h2>
-          <div className="col-span-1 space-y-2 md:pl-12 flex flex-col justify-center items-center">
+          <div className="col-span-1 space-y-2 md:pl-12 flex flex-col justify-center items-center md:items-start">
             {[
               {
                 title: "Email",
@@ -94,7 +97,7 @@ function DetailsSection() {
                 link: MyAddress,
               },
             ].map((item, index) => (
-              <div key={index} className="flex items-center space-x-2">
+              <div key={index} className="flex items-center  space-x-2">
                 {item.icon}
                 <span className="text-sm">{item.link}</span>
               </div>
@@ -111,30 +114,33 @@ function DetailsSection() {
             {
               number: 7,
               title: "Successful Missions",
-              desc: "With 4 years of coding experience and 1 year in full-stack development, creating applications is my passion, turned into a profession.With 4 years of coding and 1 year in full-stack development, creating applications is my passion, turned into a profession.",
+              desc: "With over 4 years of coding experience, I’ve successfully completed numerous projects, delivering innovative and reliable solutions. My commitment to excellence ensures every mission achieves its goals efficiently and with high quality.",
             },
             {
               number: 10,
-              title: "Successful Missions2",
-              desc: "With 4 years of coding experience and 1 year in full-stack development, creating applications is my passion, turned into a profession.With 4 years of coding and 1 year in full-stack development, creating applications is my passion, turned into a profession.",
+              title: "Personal Projects",
+              desc: "I’ve dedicated countless hours to personal projects, exploring new technologies and refining my skills. Each project represents a step forward in my journey, pushing boundaries and turning ideas into functional applications.",
             },
             {
               number: 23,
-              title: "Successful Missions3",
-              desc: "With 4 years of coding experience and 1 year in full-stack development, creating applications is my passion, turned into a profession.With 4 years of coding and 1 year in full-stack development, creating applications is my passion, turned into a profession.",
+              title: "Technologies Covered",
+              desc: "From front-end frameworks to back-end technologies, I’ve mastered over 23 different tools and languages. My versatility allows me to build full-stack applications that are robust, scalable, and built for the future.",
             },
           ].map((e) => (
             <div
               key={e.title}
               className="grid grid-cols-1 md:grid-cols-3 gap-y-6 md:gap-12 justify-center items-center"
             >
-              <div className="flex gap-4 justify-center items-center col-span-1">
-                <h3 className="text-7xl md:text-9xl flex-1 text-center md:text-right">
+              <div className="grid grid-cols-3 gap-4 justify-center items-center col-span-1">
+                <h3 className="text-7xl md:text-9xl col-span-2 text-center md:text-right bg-clip-text text-transparent bg-gradient-one">
                   {e.number}
                 </h3>
-                <p className="md:flex-1 md:w-1/2 w-full text-sm font-normal">
+                <div className="col-span-1">
+
+                <p className=" md:w-1/3 w-full text-sm font-normal">
                   {e.title}
                 </p>
+                </div>
               </div>
               <p className="col-span-2 text-xs md:text-sm font-light">
                 {e.desc}

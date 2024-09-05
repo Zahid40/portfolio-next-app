@@ -24,7 +24,7 @@ module.exports = {
         "clamp-2xl": "clamp(1.5rem, 3vw, 1.875rem)", // 2xl
         "clamp-3xl": "clamp(1.875rem, 3.5vw, 2.25rem)", // 3xl
         "clamp-4xl": "clamp(2.25rem, 4vw, 2.75rem)", // 4xl
-        "clamp-5xl": "clamp(3rem, 5vw, 3.75rem)", // 5xl
+        "clamp-5xl": "clamp(2.3rem, 5vw, 3.75rem)", // 5xl
         "clamp-6xl": "clamp(3.75rem, 6vw, 4.5rem)", // 6xl
         "clamp-7xl": "clamp(4.5rem, 7vw, 5.25rem)", // 7xl
         "clamp-8xl": "clamp(6rem, 8vw, 7rem)", // 8xl
@@ -51,7 +51,7 @@ module.exports = {
         "inner-xl":
           "inset 0 20px 25px -5px rgb(0 0 0 / 0.1), inset 0 8px 10px -6px rgb(0 0 0 / 0.1)",
         "inner-2xl": "inset 0 0px 50px -8px rgb(0 0 0 / 0.25)",
-        "inner-3xl": "inset 0 0px 60px 15px rgb(0 0 0 / 0.3)",
+        "inner-3xl": "inset 0 0px 70px 85px rgb(0 0 0 / 0.5)",
       },
       colors: {
         border: "hsl(var(--border))",
