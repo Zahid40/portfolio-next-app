@@ -25,23 +25,31 @@ function MySkillsSection() {
     <Sparkle
       fill="#204AD4"
       className="text-primary-500  md:w-8 md:h-8 w-4 h-4"
+      key="star1"
     />,
-    <Sparkle className="text-primary-500  md:w-8 md:h-8 w-4 h-4" />,
+    <Sparkle className="text-primary-500  md:w-8 md:h-8 w-4 h-4"
+    key="star2" />,
     <Sparkle
       fill="#204AD4"
       className="text-primary-500  md:w-8 md:h-8 w-4 h-4"
+      key="star3"
     />,
-    <Sparkle className="text-primary-500  md:w-8 md:h-8 w-4 h-4" />,
+    <Sparkle className="text-primary-500  md:w-8 md:h-8 w-4 h-4"
+    key="star4" />,
     <Sparkle
       fill="#204AD4"
       className="text-primary-500  md:w-8 md:h-8 w-4 h-4"
+      key="star5"
     />,
-    <Sparkle className="text-primary-500  md:w-8 md:h-8 w-4 h-4" />,
+    <Sparkle className="text-primary-500  md:w-8 md:h-8 w-4 h-4"
+    key="star6" />,
     <Sparkle
       fill="#204AD4"
       className="text-primary-500  md:w-8 md:h-8 w-4 h-4"
+      key="star7"
     />,
-    <Sparkle className="text-primary-500  md:w-8 md:h-8 w-4 h-4" />,
+    <Sparkle className="text-primary-500  md:w-8 md:h-8 w-4 h-4"
+    key="star8" />,
   ];
 
   // Generate icon content
