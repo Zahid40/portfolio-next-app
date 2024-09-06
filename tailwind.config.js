@@ -22,19 +22,24 @@ module.exports = {
         "clamp-base": "clamp(1rem, 2.5vw, 1.125rem)", // base
         "clamp-xl": "clamp(1.2rem, 2.7vw, 1.5rem)", // base
         "clamp-2xl": "clamp(1.5rem, 3vw, 1.875rem)", // 2xl
-        "clamp-3xl": "clamp(1.875rem, 3.5vw, 2.25rem)", // 3xl
+        "clamp-3xl": "clamp(0.5rem, 2.5vw, 2.25rem)", // 3xl
         "clamp-4xl": "clamp(2.25rem, 4vw, 2.75rem)", // 4xl
         "clamp-5xl": "clamp(2.3rem, 5vw, 3.75rem)", // 5xl
         "clamp-6xl": "clamp(3.75rem, 6vw, 4.5rem)", // 6xl
         "clamp-7xl": "clamp(4.5rem, 7vw, 5.25rem)", // 7xl
         "clamp-8xl": "clamp(6rem, 8vw, 7rem)", // 8xl
-        "clamp-9xl": "clamp(8rem, 9vw, 9rem)", // 9xl
+        "clamp-9xl": "clamp(3rem, 9vw, 10rem)", // 9xl
       },
       padding: {
         main: "clamp(2rem, 3vw, 4rem)",
       },
+
+      inset:{
+        "clamp-xl":"clamp(0 , 5rem , -15rem )"
+      },
       width: {
         spiralimage: "clamp(500px , 130vw , 1200px)",
+        spiralimage2: "clamp(300px , 100vw , 100%)",
       },
       backgroundImage: {
         "gradient-one": "linear-gradient(-60deg, #A6B7F2 -10%, #204AD4 90%)",

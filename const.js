@@ -101,6 +101,25 @@ export const MySkills = [
   "MongoDB"
 ];
 
+//Details 
+export const detailsArray = [
+  {
+    number: 7,
+    title: "Successful Missions",
+    desc: "With over 4 years of coding experience, I’ve successfully completed numerous projects, delivering innovative and reliable solutions. My commitment to excellence ensures every mission achieves its goals efficiently and with high quality.",
+  },
+  {
+    number: 10,
+    title: "Personal Projects",
+    desc: "I’ve dedicated countless hours to personal projects, exploring new technologies and refining my skills. Each project represents a step forward in my journey, pushing boundaries and turning ideas into functional applications.",
+  },
+  {
+    number: 23,
+    title: "Technologies Covered",
+    desc: "From front-end frameworks to back-end technologies, I’ve mastered over 23 different tools and languages. My versatility allows me to build full-stack applications that are robust, scalable, and built for the future.",
+  },
+]
+
 
 // Function to get the icon object
 export const getIconObject = (iconName, classNameStyleForIcon) => {
