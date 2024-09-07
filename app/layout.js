@@ -85,6 +85,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google-site-verification" content="8OyoDbF2gfcjV73DYpgydlF_GBOTVd0OyultE8LcBBU" />
         <script
           key="structured-data"
           type="application/ld+json"
