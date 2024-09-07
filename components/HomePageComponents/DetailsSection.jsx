@@ -65,17 +65,18 @@ function DetailsSection() {
               </p>
             </div>
           </div>
-          <h4 className="text-center font-light text-clamp-lg ">
+          <p className="text-center font-light text-clamp-lg ">
             With <span className="text-primary-300 font-medium">4 years</span>{" "}
             of coding experience and 2 year in{" "}
             <span className="text-primary-300 font-medium">
               full-stack development
             </span>
             , creating applications is my passion, turned into a profession.
-          </h4>
+          </p>
         </div>
+        <div className="flex flex-col-reverse md:flex-col  mt-24 md:mt-0 border-t-2 md:border-none">
 
-        <div className="grid md:grid-cols-3 gap-4 py-20 md:py-36 place-items-center md:place-items-start place-content-center border-b-2 ">
+        <div className="grid md:grid-cols-3 gap-4 py-20 md:py-36 place-items-center md:place-items-start place-content-center md:border-b-2 ">
           <h2 className="col-span-1 text-center font-light  text-2xl md:text-4xl ">
             HI!. I&apos;m a Full-Stack Web Developer
           </h2>
@@ -135,6 +136,8 @@ function DetailsSection() {
             ))}
           </div>
         </div>
+        </div>
+
       </div>
     </div>
   );

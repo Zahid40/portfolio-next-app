@@ -66,7 +66,7 @@ function MySkillsSection() {
   ];
 
   return (
-    <div className="w-full  py-12 px-0 md:px-main max-w-5xl m-auto">
+    <div className="w-full  pt-12 pb-32 px-0 md:px-main max-w-5xl m-auto">
       <h2 className="text-center text-clamp-5xl leading-none py-main">
         {"{ "} My skills & <br /> expertise {" }"}
       </h2>

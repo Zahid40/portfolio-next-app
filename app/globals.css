@@ -65,9 +65,26 @@
   }
   body {
     @apply bg-background text-foreground;
-    
+
     &::-webkit-scrollbar {
       display: none;
+    }
+    cursor: url("/assets/zcursor.svg"), auto;
   }
+  label {
+    cursor: url("/assets/zcursor.svg"), auto;
+  }
+  input {
+    cursor: url("/assets/zcursor_ibeem.svg"), text;
+  }
+  a {
+    cursor: url("/assets/zpointer_cursor.svg"), pointer;
+  }
+  textarea {
+    cursor: url("/assets/zcursor.svg"), text;
+  }
+  *::selection {
+    background: #9ce75f46 ;
+    color: #c8aaff;
   }
 }

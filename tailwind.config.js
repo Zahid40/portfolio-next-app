@@ -58,6 +58,12 @@ module.exports = {
         "inner-2xl": "inset 0 0px 50px -8px rgb(0 0 0 / 0.25)",
         "inner-3xl": "inset 0 0px 70px 85px rgb(0 0 0 / 0.5)",
       },
+      clipPath: {
+        'invert-xl': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 10% 10%, 90% 10%, 90% 90%, 10% 90%)',
+        'invert-2xl': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 15% 15%, 85% 15%, 85% 85%, 15% 85%)',
+        'invert-3xl': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 20% 20%, 80% 20%, 80% 80%, 20% 80%)',
+        // Add more for sm, md, lg, etc.
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -108,6 +114,12 @@ module.exports = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      cursor: {
+        auto: "url('/assets/zcursor.svg'), auto",
+        default: "url('/assets/zcursor.svg'), default",
+        pointer: "url('/assets/zpointer_cursor.svg'), pointer",
+        text: "url('https://img.icons8.com/papercut/30/ruler.png'), text",
       },
       keyframes: {
         "accordion-down": {

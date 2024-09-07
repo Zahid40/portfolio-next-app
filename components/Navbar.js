@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   House,
   UserRound,
@@ -40,7 +41,7 @@ function Navbar() {
     },
     {
       name: "Blogs",
-      link: "/blogs",
+      link: "#blogs",
       icon: <Origami />,
     },
     {
@@ -50,27 +51,35 @@ function Navbar() {
     },
   ];
 
-  const navItem_ActiveState_Class_d = "text-sm text-primary-300 hover:text-primary-200";
-  const navItem_InActiveState_Class_d = "text-sm text-neutral-400 hover:text-primary-200"; 
+  const navItem_ActiveState_Class_d =
+    "text-sm text-primary-300 hover:text-primary-200";
+  const navItem_InActiveState_Class_d =
+    "text-sm text-neutral-400 hover:text-primary-200";
 
   return (
-  
-      <nav className="flex items-center justify-between gap-4 px-6 py-4 md:px-8 md:py-4 w-full fixed md:fixed top-0 md:top-0 z-50 bg-black ">
-        <div className="w-full flex justify-between items-center gap-4">
-          <Link href={"/"}>
-            <img
-              src="/assets/ZahidSig.svg"
-              alt="logo"
-              className="w-20 md:w-28"
-            />
-          </Link>
-          <div className="flex gap-2">
-
+    <nav className="fixed top-2 w-full mx-auto z-50">
+      <div className=" w-4/5 flex justify-between items-center gap-4 mx-auto border-2 rounded-full bg-background px-6 py-4 md:px-8 md:py-2 ">
+        <Link href={"/"} className="relative w-32 h-20">
+          <Image
+            src="/assets/ZahidSig.svg"
+            alt="logo"
+            fill
+            style={{ objectFit: "contain" }}
+          />
+        </Link>
+        <div className="flex gap-2">
           <ul className="hidden md:flex items-center justify-center md:gap-12 gap-4 text-sm md:text-sm w-full ">
             {navItems.map((item) => {
               return (
                 <li key={item.name}>
-                  <Link href={item.link}  className={pathname == item.link ? navItem_ActiveState_Class_d : navItem_InActiveState_Class_d }>
+                  <Link
+                    href={item.link}
+                    className={
+                      pathname == item.link
+                        ? navItem_ActiveState_Class_d
+                        : navItem_InActiveState_Class_d
+                    }
+                  >
                     {item.name}
                   </Link>
                 </li>
@@ -78,23 +87,22 @@ function Navbar() {
             })}
           </ul>
           <Link
-            href="/contact"
+            href="#contact"
             className="italic hidden md:flex justify-center items-center gap-2 py-2 md:px-8 px-4 border  rounded-full  border-primary-800  hover:border-primary-500 hover:shadow-[0_0px_40px_0px_var(--primary-800)] md:w-48 w-40 text-sm"
           >
             Let&apos;s Talk
           </Link>
-          </div>
-
-
-          <button
-            className="flex md:hidden justify-center items-center gap-2 py-2 px-6 border rounded-full  border-primary-800 text-sm"
-            onClick={() => setNavState(!NavState)}
-          >
-            <p className="text-sm font-normal">{NavLocation}</p>
-            <HiOutlineMenuAlt1 className="text-2xl" />
-          </button>
         </div>
-      </nav>
+
+        <button
+          className="flex md:hidden justify-center items-center gap-2 py-2 px-6 border rounded-full  border-primary-500 text-sm"
+          onClick={() => setNavState(!NavState)}
+        >
+          <p className="text-sm font-normal">{NavLocation}</p>
+          <HiOutlineMenuAlt1 className="text-2xl" />
+        </button>
+      </div>
+    </nav>
   );
 }
 
