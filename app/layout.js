@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { MyEmail, MyPhone, appname, description, keywords, url , shemaorgstructuredData } from "@/const";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -94,6 +95,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
+      <GoogleTagManager gtmId="GTM-TJJWRSRX" />
       <body className={poppins.className}>
         <ThemeProvider
           attribute="class"
