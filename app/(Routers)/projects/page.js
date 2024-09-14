@@ -13,6 +13,8 @@ export const metadata = {
     siteName: appname,
     images: "/images/ogimage.png",
     type: "website",
+    size : { width: 1200, height: 630 }
+    
   },
   twitter: {
     card: "summary_large_image",

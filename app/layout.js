@@ -16,12 +16,6 @@ const poppins = Poppins({
 
 export const metadata = {
   metadataBase: new URL(url),
-  title: appname,
-  description: description,
-  authors: [{ name: "Zahid" }],
-  creator: "Zahid",
-  publisher: "Zahid",
-  keywords: keywords,
 
   icons: {
     icon: [
@@ -60,30 +54,12 @@ export const metadata = {
     TileColor: "#da532c",
   },
   manifest: "/site.webmanifest",
-
-  openGraph: {
-    title: appname,
-    description: description,
-    url: url,
-    siteName: appname,
-    images: "/images/ogimage.png",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: appname,
-    description: description,
-    creator: "@its_zahid83",
-    images: [`${url}/images/ogimage.png`], // Must be an absolute URL
-  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="google-site-verification" content="8OyoDbF2gfcjV73DYpgydlF_GBOTVd0OyultE8LcBBU" />
         <script
           key="structured-data"
