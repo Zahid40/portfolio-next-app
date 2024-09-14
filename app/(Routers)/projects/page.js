@@ -1,10 +1,26 @@
 import React  from "react";
 import Card from "@/components/projectsComponents/Card";
 import c_data from '@/public/projectdata.json'
+import { appname, url } from "@/const";
 
 export const metadata = {
   title: "Projects by Zahid",
   description: "Designing",
+  openGraph: {
+    title: "Projects by Zahid",
+    description: "Designing",
+    url: url,
+    siteName: appname,
+    images: "/images/ogimage.png",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Projects by Zahid",
+    description: "Designing",
+    creator: "@its_zahid83",
+    images: [`${url}/images/ogimage.png`], // Must be an absolute URL
+  },
 };
 
 
