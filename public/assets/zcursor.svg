@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 120 120" width="30px" height="30px" baseProfile="basic"><rect width="24" height="53" x="65.192" y="58.285" opacity=".35" transform="rotate(-33.332 77.187 84.781)"/><rect width="24" height="53" x="62.994" y="54.943" fill="#0037ff" transform="rotate(-33.332 74.989 81.44)"/><polygon points="105.926,59.869 65.362,70.986 39.085,103.827 28.547,15.007" opacity=".35"/><polygon fill="#52afff" points="105.392,54.869 64.829,65.986 38.551,98.827 28.014,10.007"/></svg>
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_684_712)">
+    <rect width="25" height="25" fill="#0000"/>
+    <path opacity="0.35" d="M10.4895 11.1198L5.64648 14.3049L12.6804 25L17.5235 21.8149L10.4895 11.1198Z" fill="black"/>
+    <path d="M9.9583 10.3126L5.11523 13.4978L12.1492 24.1929L16.9922 21.0077L9.9583 10.3126Z" fill="#F1302E"/>
+    <path opacity="0.35" d="M19 12.112L9.03973 14.8655L2.58755 23L0 1L19 12.112Z" fill="black"/>
+    <path d="M18 10.6069L8.56406 13.2353L2.45116 21L0 0L18 10.6069Z" fill="#F2845C"/>
+    </g>
+    <defs>
+    <clipPath id="clip0_684_712">
+    <rect width="25" height="25" fill="white"/>
+    </clipPath>
+    </defs>
+    </svg>
+    
