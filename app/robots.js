@@ -1,15 +1,11 @@
 export default function robots() {
-    return {
-      rules: [
-        {
-          userAgent: 'Googlebot',
-          allow: ['/'],
-        },
-        {
-          userAgent: ['Applebot', 'Bingbot'],
-          allow: ['/'],
-        },
-      ],
-      sitemap: 'https://zahid.vercel.app/sitemap.xml',
-    }
-  }
+  return {
+    rules: [
+      {
+        userAgent: '*', // Allow all user agents
+        allow: ['/'],
+      },
+    ],
+    sitemap: 'https://zahid.vercel.app/sitemap.xml',
+  };
+}
