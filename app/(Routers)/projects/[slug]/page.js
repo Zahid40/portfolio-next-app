@@ -1,11 +1,14 @@
+import { appname, url } from "@/const";
 import React from "react";
 
+
 export async function generateMetadata({ params }) {
+  let name = params.slug
   return {
-    title: "Project - " + params.slug,
+    title: "Project - " + name,
     description: "Designing",
     openGraph: {
-      title: "Projects by Zahid",
+      title: "Project - " + name,
       description: "Designing",
       url: url,
       siteName: appname,
@@ -14,10 +17,10 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Projects by Zahid",
+      title: "Project - " + name,
       description: "Designing",
       creator: "@its_zahid83",
-      images: [`${url}/images/ogimage.png`], // Must be an absolute URL
+      images: [`${url}`], // Must be an absolute URL
     },
   };
 }

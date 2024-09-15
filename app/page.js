@@ -5,14 +5,9 @@ import MySkillsSection from "@/components/HomePageComponents/MySkillsSection";
 import PortfolioSection from "@/components/HomePageComponents/PortfolioSection";
 import { appname, description, keywords, url } from "@/const";
 
-
-
 export const metadata = {
   title: appname,
   description: description,
-  authors: [{ name: "Zahid" }],
-  creator: "Zahid",
-  publisher: "Zahid",
   keywords: keywords,
 
   openGraph: {

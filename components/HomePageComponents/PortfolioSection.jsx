@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DynamicPattern from "../things/DynamicPattern";
@@ -14,6 +14,17 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 
 function PortfolioSection() {
+  const [api, setApi] = useState();
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+    api.on("select", () => {
+      console.log(api.slidesInView());
+    });
+  }, [api]);
+
   return (
     <div className="relative ">
       <div className="absolute top-16 md:top-1/2 -left-16  md:left-1/4   ">
@@ -56,6 +67,7 @@ function PortfolioSection() {
 
       <div className="relative  mx-auto w-full">
         <Carousel
+          setApi={setApi}
           className="w-full  mx-auto"
           plugins={[
             Autoplay({
@@ -73,10 +85,10 @@ function PortfolioSection() {
             {Array.from({ length: 15 }).map((_, index) => (
               <CarouselItem
                 key={index}
-                className="pl-1 basis-1/2 md:basis-1/3 lg:basis-1/5"
+                className={`pl-1 md:basis-1/3 lg:basis-1/5 transition-transform duration-300 `}
               >
                 <div className="p-1">
-                  <Card className="bg-gradient-one">
+                  <Card className="bg-green-600 border-none shadow-xl">
                     <CardContent className="flex aspect-[3/2] items-center justify-center p-6">
                       <span className="text-2xl font-semibold">
                         {index + 1}

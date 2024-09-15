@@ -5,7 +5,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { ThemeProvider } from "@/components/providers/theme-provider";
-import { MyEmail, MyPhone, appname, description, keywords, url , shemaorgstructuredData } from "@/const";
+import { url , shemaorgstructuredData } from "@/const";
 import { GoogleTagManager , GoogleAnalytics } from '@next/third-parties/google'
 
 const poppins = Poppins({
@@ -16,7 +16,9 @@ const poppins = Poppins({
 
 export const metadata = {
   metadataBase: new URL(url),
-
+  authors: [{ name: "Zahid" }],
+  creator: "Zahid",
+  publisher: "Zahid",
   icons: {
     icon: [
       { url: "/icons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
