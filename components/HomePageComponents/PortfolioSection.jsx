@@ -47,13 +47,7 @@ function PortfolioSection() {
         </p>
       </div>
       <div>
-          {
-            pdata.map((project,index)=>{
-              return(
-                <Link key={index} href={"/projects/"+project.id} passHref><a className="text-center text-clamp-3xl font-medium drop-shadow-2xl shadow-white ">{project.title}</a></Link>
-              )
-            })
-          }
+          
       </div>
     </div>
   );
