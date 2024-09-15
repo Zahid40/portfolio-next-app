@@ -9,13 +9,14 @@ import { SiBuymeacoffee } from "react-icons/si";
 import { RxArrowTopRight } from "react-icons/rx";
 
 function Footer() {
+  const yearnow = new Date().getFullYear();
   return (
     <>
       <div className="bg-gary overflow-hidden">
         <div className="w-96 h-16 relative top-[-100px] shadow-[0_0px_1000px_30px_var(--primary-800)]"></div>
         <div className="p-4 pb-8 md:p-8 md:pb-16 flex flex-col md:flex-row gap-12 md:gap-2">
           <div className="w-full md:w-1/2 flex flex-col gap-8">
-            <h2 className="text-5xl font-normal ">
+            <h2 className="text-clamp-5xl leading-none font-normal text-balance">
               Designed and developed with passion. Crafted to inspire.
             </h2>
             <Link
@@ -122,27 +123,47 @@ function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4  p-4 md:p-8 gap-4">
-          {/* <p className="col-span-2 md:col-span-4 text-xl">Usefull Links</p> */}
-          <a href="https://www.codewithharry.com/" className="text-sm font-normal text-gray-400 hover:text-white">CodeWithHarry</a>
-          <a href="https://www.fffuel.co/" className="text-sm font-normal text-gray-400 hover:text-white">fffuel</a>
-          <a href="https://fonts.google.com/" className="text-sm font-normal text-gray-400 hover:text-white">Google Fonts</a>
-          <a href="https://fontawesome.com/" className="text-sm font-normal text-gray-400 hover:text-white">Fontawesome</a>
-          <a href="https://www.freepik.com/" className="text-sm font-normal text-gray-400 hover:text-white">Freepik</a>
-          <a href="https://storyset.com/" className="text-sm font-normal text-gray-400 hover:text-white">Storyset</a>
-          <a href="https://www.flaticon.com/" className="text-sm font-normal text-gray-400 hover:text-white">Flaticon</a>
-          <Link href={"/"} className="text-sm font-normal text-gray-400 hover:text-white">More Usefull Links</Link>
+        <div className="grid grid-cols-2 md:grid-cols-4  p-4 md:p-8 gap-4 ">
+          {
+            [
+              {
+                link:"https://www.codewithharry.com/",for:"CodeWithHarry"
+              },
+              {
+                link:"https://www.fffuel.co/",for:"fffuel"
+              },
+              {
+                link:"https://fonts.google.com/",for:"Google Fonts"
+              },
+              {
+                link:"https://fontawesome.com/",for:"Fontawesome"
+              },
+              {
+                link:"https://www.freepik.com/",for:"Freepik"
+              },
+              {
+                link:"https://storyset.com/",for:"Storyset"
+              },
+              {
+                link:"https://www.flaticon.com/",for:"Storyset"
+              },
+              
+            ].map((link)=>(
+              <Link key={link.for} href={link.link} className="text-sm font-normal text-gray-400 hover:text-white">{link.for}</Link>
+            ))
+          }
+          
         </div>
 
         <BannerScroll />
         <div className="p-4 md:p-8">
           <div className="flex justify-between">
             <small className="text-sm">
-              &copy; 2024 | Zahid | All Rights Reserved
+              &copy; {yearnow} | Zahid | All Rights Reserved
             </small>
-            <small>
+            {/* <small>
               <Link href="/PrivacyPolicy"> Privacy Policy</Link>
-            </small>
+            </small> */}
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@ function BannerScroll() {
   const items = ["Develop", "Create", "Design","Develop", "Create", "Design","Develop", "Create", "Design","Develop", "Create", "Design","Develop", "Create", "Design","Develop", "Create", "Design"];
 
   return (
-    <Marquee direction={"right"} gradient gradientColor={"#1a1a1a"} gradientWidth={100} className="flex py-2 overflow-hidden">
+    <Marquee direction={"right"} gradient gradientColor={"#1a1a1a"} gradientWidth={100} className="flex py-2 overflow-hidden my-4">
       {items.map((item, index) => (
         <div className="flex justify-center items-center" key={index}>
           <BannerItem text={item} />

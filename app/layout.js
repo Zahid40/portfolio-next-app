@@ -78,6 +78,7 @@ export default function RootLayout({ children }) {
           defaultTheme="dark"
           disableTransitionOnChange
         >
+          
           <Navbar />
           {children}
           <SpeedInsights />

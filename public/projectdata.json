@@ -38,5 +38,8 @@
       "technologies_used": ["js", "html", "tailwind"],
       "main_image_url": "https://anotherexample.com/main_image.png"
     }
+  },
+  "blogs":{
+    
   }
 }

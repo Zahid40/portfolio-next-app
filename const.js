@@ -1,4 +1,4 @@
-//varible Dependency Imports 
+//varible Dependency Imports
 import {
   FaHtml5,
   FaCss3,
@@ -26,6 +26,23 @@ export const url = "https://zahid.vercel.app";
 export const description =
   "At Zahid Web Solutions, I offer top-tier web development services, specializing in cutting-edge technologies like Next.js, React.js, and JavaScript. Whether you're looking to build a responsive website, a dynamic web application, or need a web designer skilled in Figma, I have the expertise to deliver. My services include JavaScript development, Next.js web applications, React.js front-end development, and custom web design. Let’s create a modern website that’s fast, scalable, and visually appealing, tailored to your business needs.";
 export const keywords = [
+  "Zahid",
+  "zahid",
+  "Zahid webz",
+  "Zahid web",
+  "Zahid dev",
+  "Dev",
+  "Developer",
+  "Web",
+  "Website",
+  "Designer",
+  "Web designer",
+  "Code",
+  "Zahid Code",
+  "Zahid Website",
+  "Zahid Design",
+  "zahid website",
+  "zahid designer",
   "Next.js",
   "React",
   "JavaScript",
@@ -55,10 +72,14 @@ export const keywords = [
   "Mobile-First Design",
   "User-Centric Design",
   "Digital Product Design",
+  "zaid",
+  "ahid",
+  "sahid",
+  "shahid",
+  "zahid",
+  "zahid ansari",
+  "Zahid Ansari",
 ];
-
-
-
 
 //Social Information
 export const MyEmail = "zahidanasari17@gmail.com";
@@ -98,10 +119,10 @@ export const MySkills = [
   "Bootstrap",
   "Node.js",
   "Express.js",
-  "MongoDB"
+  "MongoDB",
 ];
 
-//Details 
+//Details
 export const detailsArray = [
   {
     number: 7,
@@ -118,8 +139,7 @@ export const detailsArray = [
     title: "Technologies Covered",
     desc: "From front-end frameworks to back-end technologies, I’ve mastered over 23 different tools and languages. My versatility allows me to build full-stack applications that are robust, scalable, and built for the future.",
   },
-]
-
+];
 
 // Function to get the icon object
 export const getIconObject = (iconName, classNameStyleForIcon) => {
@@ -154,7 +174,6 @@ export const getIconObject = (iconName, classNameStyleForIcon) => {
   };
 };
 
-
 export const shemaorgstructuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -162,13 +181,11 @@ export const shemaorgstructuredData = {
   jobTitle: "Web Developer & Designer",
   description: description,
   url: url,
-  sameAs: [
-    MyGithub,MyInstagram,MyWhatsapp,MyFacebook,MyTwitter
-  ],
+  sameAs: [MyGithub, MyInstagram, MyWhatsapp, MyFacebook, MyTwitter],
   worksFor: {
     "@type": "Organization",
-    name: "Zahid - Professional Web Developer & Designer",
-    url: url
+    name: "Zahid WebZ",
+    url: url,
   },
   knowsAbout: keywords,
   contactPoint: {
@@ -176,6 +193,15 @@ export const shemaorgstructuredData = {
     contactType: "Customer Service",
     email: MyEmail,
     telephone: MyPhone,
-    url: url
-  }
+    url: url,
+  },
 };
+
+// Reviewer Data
+
+export const Reviewer_data = [
+  {
+    name:"Zahid",
+    image:"/icons/icon.png"
+  }
+]
