@@ -35,17 +35,17 @@ function Navbar() {
     },
     {
       name: "About Me",
-      link: "#AboutMe",
+      link: "/AboutMe",
       icon: <UserRound />,
     },
     {
       name: "Projects",
-      link: "#Projects",
+      link: "/projects",
       icon: <FlaskConical />,
     },
     {
       name: "Blogs",
-      link: "#blogs",
+      link: "/blogs",
       icon: <Origami />,
     },
     {
@@ -61,59 +61,59 @@ function Navbar() {
     "text-xs text-neutral-400 hover:text-primary-200 font-semibold";
 
   return (
-    <nav className="fixed top-2 w-full mx-auto z-50">
-      <div className=" w-4/5  mx-auto border-2  border-neutral-800 rounded-full bg-background overflow-hidden">
-        <div className="flex justify-between items-center gap-4 px-4 py-4 md:px-4 md:py-2">
-          <Link href={"/"} className="relative w-24 h-12">
-            <Image
-              src="/assets/ZahidSig.svg"
-              alt="logo"
-              fill
-              style={{ objectFit: "contain" }}
-            />
-          </Link>
-          <div className="flex gap-2">
-            <ul className="hidden md:flex items-center justify-center md:gap-12 gap-4 text-sm md:text-sm w-full ">
-              {navItems.map((item) => {
-                return (
-                  <li key={item.name}>
-                    <Link
-                      href={item.link}
-                      className={
-                        pathname == item.link
-                          ? navItem_ActiveState_Class_d
-                          : navItem_InActiveState_Class_d
-                      }
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-          <Button asChild>
-            <Link href="#contact" className="">
-              Let&apos;s Talk
+    <>
+      <motion.div
+        className="fixed top-0  w-full h-[2px]  mx-auto bg-primary-500 origin-left rounded-full "
+        style={{ scaleX }}
+      />
+      <nav className="fixed top-2 w-full mx-auto z-50">
+        <div className=" w-4/5  mx-auto border-2  border-neutral-800 rounded-full bg-background overflow-hidden">
+          <div className="flex justify-between items-center gap-4 px-4 py-4 md:px-4 md:py-2">
+            <Link href={"/"} className="relative w-24 h-12">
+              <Image
+                src="/assets/ZahidSig.svg"
+                alt="logo"
+                fill
+                style={{ objectFit: "contain" }}
+              />
             </Link>
-          </Button>
+            <div className="flex gap-2">
+              <ul className="hidden md:flex items-center justify-center md:gap-12 gap-4 text-sm md:text-sm w-full ">
+                {navItems.map((item) => {
+                  return (
+                    <li key={item.name}>
+                      <Link
+                        href={item.link}
+                        className={
+                          pathname == item.link
+                            ? navItem_ActiveState_Class_d
+                            : navItem_InActiveState_Class_d
+                        }
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <Button asChild>
+              <Link href="#contact" className="">
+                Let&apos;s Talk
+              </Link>
+            </Button>
 
-          <Button
-            className=" md:hidden  gap-2 py-2 px-6 border rounded-full  border-primary-500 text-sm"
-            onClick={() => setNavState(!NavState)}
-          >
-            <p className="text-sm font-normal">{NavLocation}</p>
-            <HiOutlineMenuAlt1 className="text-2xl" />
-          </Button>
+            <Button
+              className=" md:hidden  gap-2 py-2 px-6 border rounded-full  border-primary-500 text-sm"
+              onClick={() => setNavState(!NavState)}
+            >
+              <p className="text-sm font-normal">{NavLocation}</p>
+              <HiOutlineMenuAlt1 className="text-2xl" />
+            </Button>
+          </div>
         </div>
-        <div className="w-full h-auto mx-auto ">
-          <motion.div
-            className=" w-full h-[2px]  mx-auto bg-neutral-600 origin-left rounded-full "
-            style={{ scaleX }}
-          />
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }
 

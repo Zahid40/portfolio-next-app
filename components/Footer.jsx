@@ -145,7 +145,7 @@ function Footer() {
                 link:"https://storyset.com/",for:"Storyset"
               },
               {
-                link:"https://www.flaticon.com/",for:"Storyset"
+                link:"https://www.flaticon.com/",for:"Flaticon"
               },
               
             ].map((link)=>(
