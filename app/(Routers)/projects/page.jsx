@@ -39,7 +39,7 @@ async function Projects() {
     <div className="rounded-xl overflow-hidden h-full w-full  pb-12 pt-[10vh] px-main max-w-6xl m-auto min-h-svh  relative ">
       <div className="border-2 p-8 rounded-sm">
       <h1 className="text-clamp-6xl  ">Projects</h1>
-      <p className="font-light text-sm w-full md:w-2/3">DotoZ is a powerful todo app designed to help you organize tasks, set priorities, and boost productivity. It's available as a downloadable web app, created with React + Vite.</p>
+      <p className="font-light text-sm w-full md:w-2/3">DotoZ is a powerful todo app designed to help you organize tasks, set priorities, and boost productivity. It&apos;s available as a downloadable web app, created with React + Vite.</p>
 
       </div>
       <div className="w-full h-full flex justify-center md:p-8 p-4 flex-col gap-12 mx-auto ">
