@@ -97,8 +97,8 @@ function Navbar() {
                 })}
               </ul>
             </div>
-            <Button asChild>
-              <Link href="#contact" className="">
+            <Button asChild varient="outline">
+              <Link href="/contact" className="">
                 Let&apos;s Talk
               </Link>
             </Button>
