@@ -1,7 +1,7 @@
 import React  from "react";
 import Card from "@/components/projectsComponents/Card";
-import c_data from '@/public/projectdata.json'
 import { appname, url } from "@/const";
+import data from "@/public/data";
 
 export const metadata = {
   title: "Projects by Zahid",
@@ -31,7 +31,7 @@ export const metadata = {
 };
 
 async function Projects() {
-  const data = c_data.projects;
+  const {projects} = data;
   return (
     <div className="rounded-xl overflow-hidden h-full w-full  pb-12 pt-[10vh] px-main max-w-6xl m-auto min-h-svh  relative ">
       <div className="border-2 p-8 rounded-sm">
@@ -39,8 +39,8 @@ async function Projects() {
       <p className="font-light text-sm w-full md:w-2/3">DotoZ is a powerful todo app designed to help you organize tasks, set priorities, and boost productivity. It&apos;s available as a downloadable web app, created with React + Vite.</p>
       </div>
       <div className="w-full h-full flex justify-center md:p-8 p-4 flex-col gap-12 mx-auto ">
-        {Object.keys(data).map((projectName) => (
-          <Card key={projectName} data={data[projectName]} />
+        {Object.keys(projects).map((projectName) => (
+          <Card key={projectName} data={projects[projectName]} link={`/project/${projectName}`} />
         ))}
       </div>
     </div>

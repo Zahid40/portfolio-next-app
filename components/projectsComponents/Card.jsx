@@ -4,10 +4,10 @@ import { GoArrowUpRight, GoArrowRight } from "react-icons/go";
 import TechUsedIconsPack from "./TechUsedIconsPack";
 
 function Card(props) {
-  const data = props.data;
+  const {data , link} = props;
   return (
     <>
-      <div className="bg-zgary p-8 rounded-xl flex flex-col gap-4">
+      <div className=" p-8 rounded-xl flex flex-col gap-4">
         <div className=" flex flex-col md:flex-row gap-4">
           <div className="md:w-1/2 w-full flex md:flex-col flex-row items-start justify-between gap-6">
             <h1 className="text-6xl md:text-9xl mb-16">{data.project_name}</h1>
@@ -26,15 +26,15 @@ function Card(props) {
           <Link
             href={data.project_link}
             type="button"
-            className="border border-zprimary-700 hover:bg-zprimary-700 w-full py-2 px-8 rounded-md font-normal text-xl transition duration-300 ease-in-out flex justify-between items-center"
+            className="border border-primary-700 hover:bg-primary-700 w-full py-2 px-8 rounded-md font-normal text-xl transition duration-300 ease-in-out flex justify-between items-center"
           >
             Visit Now
             <GoArrowUpRight className="font-black text-4xl" />
           </Link>
           <Link
-            href={"/projects/" + data.project_name}
+            href={link}
             type="button"
-            className="border  border-zprimary-700 bg-zprimary-700 w-full py-2 px-8 rounded-md font-normal text-xl transition duration-300 ease-in-out flex justify-between items-center"
+            className="border border-primary-700 bg-primary-700 w-full py-2 px-8 rounded-md font-normal text-xl transition duration-300 ease-in-out flex justify-between items-center"
           >
             See Journey
             <GoArrowRight className="font-black text-4xl" />

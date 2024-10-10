@@ -35,23 +35,18 @@ function Navbar() {
     },
     {
       name: "About Me",
-      link: "/AboutMe",
+      link: "/about",
       icon: <UserRound />,
     },
     {
       name: "Projects",
-      link: "/projects",
+      link: "/project",
       icon: <FlaskConical />,
     },
     {
       name: "Blogs",
-      link: "/blogs",
+      link: "/blog",
       icon: <Origami />,
-    },
-    {
-      name: "Components",
-      link: "/components",
-      icon: <Component />,
     },
   ];
 
@@ -73,6 +68,7 @@ function Navbar() {
               <Image
                 src="/assets/ZahidSig.svg"
                 alt="logo"
+                sizes="100px"
                 fill
                 style={{ objectFit: "contain" }}
               />

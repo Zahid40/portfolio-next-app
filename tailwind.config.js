@@ -38,6 +38,7 @@ module.exports = {
         "clamp-xl":"clamp(0 , 5rem , -15rem )"
       },
       width: {
+        
         spiralimage: "clamp(500px , 130vw , 1200px)",
         spiralimage2: "clamp(300px , 100vw , 100%)",
       },

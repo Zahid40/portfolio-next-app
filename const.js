@@ -86,7 +86,7 @@ export const MyEmail = "zahidanasari17@gmail.com";
 export const MyPhone = "+91 9625162488";
 export const MyAddress = "Delhi , India";
 export const MyWhatsapp = `https://wa.me/${MyPhone}`;
-export const MyInstagramUsername = "zahid_w83";
+export const MyInstagramUsername = "zahid.devz";
 export const MyInstagram = `https://www.instagram.com/${MyInstagramUsername}`;
 export const MyGithubUsername = "Zahid40";
 export const MyGithub = `https://github.com/${MyGithubUsername}`;
@@ -121,6 +121,29 @@ export const MySkills = [
   "Express.js",
   "MongoDB",
 ];
+
+export const shemaorgstructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Zahid",
+  jobTitle: "Web Developer & Designer",
+  description: description,
+  url: url,
+  sameAs: [MyGithub, MyInstagram, MyWhatsapp, MyFacebook, MyTwitter],
+  worksFor: {
+    "@type": "Organization",
+    name: "Zahid WebZ",
+    url: url,
+  },
+  knowsAbout: keywords,
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "Customer Service",
+    email: MyEmail,
+    telephone: MyPhone,
+    url: url,
+  },
+};
 
 //Details
 export const detailsArray = [
@@ -174,31 +197,14 @@ export const getIconObject = (iconName, classNameStyleForIcon) => {
   };
 };
 
-export const shemaorgstructuredData = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Zahid",
-  jobTitle: "Web Developer & Designer",
-  description: description,
-  url: url,
-  sameAs: [MyGithub, MyInstagram, MyWhatsapp, MyFacebook, MyTwitter],
-  worksFor: {
-    "@type": "Organization",
-    name: "Zahid WebZ",
-    url: url,
-  },
-  knowsAbout: keywords,
-  contactPoint: {
-    "@type": "ContactPoint",
-    contactType: "Customer Service",
-    email: MyEmail,
-    telephone: MyPhone,
-    url: url,
-  },
-};
+//Page-----------------------------------------------------------------------------------------------------
+//Home Page------------------------------------------------------------------------------------------------
+//Blog page------------------------------------------------------------------------------------------------
+export const NotFoundBlogImage = '/assets/notfound-blog.svg'
+
+
 
 // Reviewer Data
-
 export const Reviewer_data = [
   {
     name:"Zahid",
