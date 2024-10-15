@@ -19,6 +19,12 @@ import {
   SiAdobephotoshop,
   SiShadcnui,
 } from "react-icons/si";
+import {
+  House,
+  UserRound,
+  FlaskConical,
+  Origami,
+} from "lucide-react";
 
 //App
 export const appname = "Zahid 's Portfolio";
@@ -198,6 +204,52 @@ export const getIconObject = (iconName, classNameStyleForIcon) => {
 };
 
 //Page-----------------------------------------------------------------------------------------------------
+//Navbar Data
+export const NavLinks = [
+  {
+    name: "Home",
+    link: "/",
+    icon: House,
+  },
+  {
+    name: "About Me",
+    link: "/about",
+    icon: UserRound,
+  },
+  {
+    name: "Projects",
+    link: "/project",
+    icon: FlaskConical,
+  },
+  {
+    name: "Blogs",
+    link: "/blog",
+    icon: Origami,
+  },
+];
+
+export const BottomNavLinks = [
+  {
+    name: "Home",
+    link: "/",
+    icon: House,
+  },
+  {
+    name: "About Me",
+    link: "/about",
+    icon: UserRound,
+  },
+  {
+    name: "Projects",
+    link: "/project",
+    icon: FlaskConical,
+  },
+  {
+    name: "Blogs",
+    link: "/blog",
+    icon: Origami,
+  },
+];
 //Home Page------------------------------------------------------------------------------------------------
 //Blog page------------------------------------------------------------------------------------------------
 export const NotFoundBlogImage = '/assets/notfound-blog.svg'

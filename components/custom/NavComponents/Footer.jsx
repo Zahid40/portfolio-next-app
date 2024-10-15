@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import BannerScroll from "./things/BannerScroll";
+import BannerScroll from "../../things/BannerScroll";
 import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaDribbble, FaBehance, FaFigma, FaGithub } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";

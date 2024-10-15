@@ -2,8 +2,8 @@ import { Poppins } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/custom/NavComponents/Navbar";
+import Footer from "../components/custom/NavComponents/Footer";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { url , shemaorgstructuredData } from "@/const";
 import { GoogleTagManager , GoogleAnalytics } from '@next/third-parties/google'
